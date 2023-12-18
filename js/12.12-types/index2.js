@@ -42,7 +42,7 @@
 // Strings  — любые данные в одинарной, двойной кавычке или обратной кавычке.
 // Booleans  – истинное или ложное значение
 // Null — пустое значение или отсутствие значения.
-// Undefined  — объявленная переменная без значения
+// Undefined  — объявленная переменная без значения 
 // let name
 // Symbol  — уникальное значение, которое может быть сгенерировано конструктором символов.
 //  NULL ПУСТОЙ ЗНАЧЕНИЕ ЖОҚ
@@ -160,6 +160,8 @@
 // \\: Обратная косая черта
 // ': Одинарная кавычка (')
 // ": Двойная кавычка (")
+// 
+
 
 
 // console.log(`The sum of 2 and 3 is 5`)              // statically writing the data
@@ -188,12 +190,29 @@
 // let country = 'Finland'
 // console.log(country.substr(3,4)) // 3-ші элементтен бастап 4 шт элемент қиып алады
 
-// split(): строканы бөліп тастайды
-// let string = '30 days of javascript'
+// split(): әр элементті бөліп массив қайтарады
+let string = '30 days of javascript'
 // console.log(string.split(' ')) // ["30", "days", "of", "javascript"] осылай шығарады егер біз екі тырнақшаның ортасына пробел қойсақ.
 // let str = '30 days of puthon'
 // console.log(str.split()) // егер жақшаның ішіне ештеңе жазбасақ ['30 days of puthon'] осылай массив қылып қайтарады
-// console.log(str.split('')) // осылай жазатын болсақ бір-бір эленттен алып шығарады. ['3', '0', ' ', 'd', 'a', 'y', 's', ' ', 'o', 'f', ' ', 'p', 'u', 't', 'h', 'o', 'n'] даже ПРОБЕЛДЫ ЭЛЕМЕНТ СИЯҚТЫ АЛАДЫ.
+console.log(string.split('')) // осылай жазатын болсақ бір-бір эленттен алып шығарады. ['3', '0', ' ', 'd', 'a', 'y', 's', ' ', 'o', 'f', ' ', 'p', 'u', 't', 'h', 'o', 'n'] даже ПРОБЕЛДЫ ЭЛЕМЕНТ СИЯҚТЫ АЛАДЫ.
+
+
+
+// let password = "    345   "
+// console.log(password.trim())
+// password = password.trim()  //осылай значениені сақтап алу керек а то ол жаңа сторка қылып береді
+// console.log(password) //  сосын барып кансол жасаймыз
+// password = password.trim()
+// осылай значениені сақтап алу керек а то ол жаңа сторка қылып береді
+
+// if (password.length < 8) {
+//   console.log("The password should contain at least 8 sybols")
+// } else {
+//   console.log("the password saved")  //else шығады өйткені пасуорттың символы көп 8 ден көп болып кетеді ленз  сол үшін трим арқылы пробелдарды жою керекпіз
+// }
+
+
 
 // trim(): ПРБЕЛДЫ тексттың басында или соңында удалить етеді
 // let str = "         30 days of javascript       "  
@@ -292,17 +311,17 @@
 // let sen = 'JavaScript'
 // console.log(sen[4])
 // 11
-// for (let i = 1; i <= 5; i++) {
-//     let output = `${i} `;
-//     for (let j = 1; j <= 5; j++) {
-//       if (j === 1) {
-//         output += `1 `;
-//       } else {
-//         output += `${Math.pow(i, j)} `;
-//       }
-//     }
-//     console.log(output);
-//   }
+for (let i = 1; i <= 5; i++) {
+    let output = `${i} `;
+    for (let j = 1; j <= 5; j++) {
+      if (j === 1) {
+        output += `1 `;
+      } else {
+        output += `${Math.pow(i, j)} `;
+      }
+    }
+    console.log(output);
+  }
 
 // 12
 // let h = 'You cannot end a sentence with because because because is a conjunction'
@@ -321,33 +340,33 @@
 // console.log("Number of occurrences of 'because':", countBecause);
 // 3
 
-const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
-// Clean the text and extract words
-const cleanedText = sentence.replace(/[^\w\s]|_/g, "").replace(/\s+/g, " ");
-const words = cleanedText.split(" ");
+// const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+// // Clean the text and extract words
+// const cleanedText = sentence.replace(/[^\w\s]|_/g, "").replace(/\s+/g, " ");
+// const words = cleanedText.split(" ");
 
-// Count word occurrences
-let wordCount = {};
-words.forEach(word => {
-  if (wordCount[word]) {
-    wordCount[word]++;
-  } else {
-    wordCount[word] = 1;
-  }
-});
+// // Count word occurrences
+// let wordCount = {};
+// words.forEach(word => {
+//   if (wordCount[word]) {
+//     wordCount[word]++;
+//   } else {
+//     wordCount[word] = 1;
+//   }
+// });
 
-// Find the most frequent word
-let mostFrequentWord = '';
-let maxCount = 0;
-for (let word in wordCount) {
-  if (wordCount[word] > maxCount) {
-    mostFrequentWord = word;
-    maxCount = wordCount[word];
-  }
-}
+// // Find the most frequent word
+// let mostFrequentWord = '';
+// let maxCount = 0;
+// for (let word in wordCount) {
+//   if (wordCount[word] > maxCount) {
+//     mostFrequentWord = word;
+//     maxCount = wordCount[word];
+//   }
+// }
 
-console.log("Cleaned Text:", cleanedText);
-console.log("Most frequent word:", mostFrequentWord, "Occurrences:", maxCount);
+// console.log("Cleaned Text:", cleanedText);
+// console.log("Most frequent word:", mostFrequentWord, "Occurrences:", maxCount);
 
-// 4
-console.log(5000 * 12 + 10000 + 12 * 15000)
+// // 4
+// console.log(5000 * 12 + 10000 + 12 * 15000)
