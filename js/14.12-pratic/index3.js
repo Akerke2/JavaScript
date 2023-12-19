@@ -18,7 +18,7 @@
 
 // АРИФМЕТИКАЛЫҚ ОПЕРАТОРЛАР
 // console.log(10 / 4) // 2.5  
-// console.log(18 % 6) // 3  27 / 6 *6 -27 = 
+console.log(15 % 2) // 3  27 / 6 *6 -27 = 
 
 
 // дәреже
@@ -123,6 +123,240 @@
 // console.log(5 < 5)
 
 // 6
-i 4 > 3 && 10 < 12      //true
-ii 4 > 3 && 10 > 12     //false
-iii 4 > 3 || 10 < 12    //true
+// i 4 > 3 && 10 < 12      //true
+// ii 4 > 3 && 10 > 12     //false
+// iii 4 > 3 || 10 < 12    //true
+// console.log(4 > 3 || 10 > 12) // true
+// console.log(!(4 > 3)) // false
+// console.log(!(4 < 3)) // true
+// console.log(!(false)) // true
+// console.log(!(4 > 3 && 10 < 12)) // false
+// console.log(!(4 > 3 && 10 > 12)) // true
+// console.log(!(4 === '4')) // true
+
+
+// CLASS WORK
+
+// let x = 5;
+
+// x += 1  // 6  
+// x += 6; // 12 болады өйткені 6 деегн мән сақталып қалады 6+6=12 қосамыз тең 12
+// x += 18 //30
+  
+// let y = 9;
+// x += y; // x = 39
+
+// y += x  //y = 48
+
+// x *= 2 //78
+// x -= y; //30
+// y /= 6; //8
+// x %= y; // x = x % y = 30 % 8 = 30 - 3 *8 = 6
+
+// z **= 2 //36
+// x **= 0.5 // 6 /САННЫҢ 0,5 ДӘРЕЖЕСІ САННЫҢ ТҮБІРІНЕ ТЕҢ!
+
+
+// == деген еквивалентный мәнін тексереді "1" = 1 true қайтарады  "" = 0 true қайтарады
+// === мәнін және типән тексереді деген типін тексереді мысалы стринг пен намбер болса фолс қайтарады '' = 0 фолс қайтарады
+
+
+
+// console.log(typeof undefined) // 
+
+
+// console.log(2 == true)
+// console.log(-2 == true)
+
+// if (0) {  // 0 - басқа кез келген сан еквивалентный тру шығарады,  труге равноценный
+//     console.log("posetiv")
+// }
+
+// if ("") {  // пустой - дан басқа кез келген сөз еквивалентный тру шығарады,  труге равноценный
+//     console.log("posetiv")
+// }
+
+// let  someVarible
+// console.log(typeof someVarible)  // андефайнд деген тип қайтарады өйткені значение бермедік вариблға
+
+// Nagetion
+
+// let check = !(4 > 3)
+// console.log(check)  // false қайтарады
+
+
+// let isLightOn = true
+// let isLightOff = !isLightOn           // false
+// !isLightOn
+// console.log(isLightOn)
+// isLightOn = !isLightOn
+// console.log(isLightOn)
+
+// енд бірінші орындалады 
+ // && ampersand operator example
+
+// const check = 4 > 3 && 10 > 5         // true && true -> true
+// const check = 4 > 3 && 10 < 5         // true && false -> false
+// const check = 4 < 3 && 10 < 5         // false && false -> false
+
+// // || pipe or operator, example
+
+// const check = 4 > 3 || 10 > 5         // true  || true -> true
+// const check = 4 > 3 || 10 < 5         // true  || false -> true
+// const check = 4 < 3 || 10 < 5         // false || false -> false
+
+
+
+// // Increment Operator + 
+// let x = 7;
+// --x; //x -= 1; pre-decrement
+// console.log(x)
+// ++x; // x += 1; pre-increment
+// console.log(x) //7
+
+// // console.log(--x); //6
+// console.log(++x); //7
+// console.log(x++); //7
+// console.log(x++); //7
+
+
+// Pre-increment
+// let count = 0
+// console.log(++count)        // 1  пре де 
+// console.log(count)          // 1
+
+// // Post-increment
+// let count = 0
+// console.log(count++)        // 0
+// console.log(count)          // 1
+
+// Ternary Operators
+
+// true  болған кезде ? сұрақ белгісі орындалады
+// фолс болса кос нүкте
+
+let isRaining = 10
+// // temp > 0 ? temp++ : temp--; //5 бірақ 6
+// // console.log(--temp)  //5 точно
+// // console.log(temp++)  //5 бірақ 6
+// // console.log(temp--) //6 бірақ 5
+// // console.log(temp)  //5 точно
+
+// temp > 0 ? temp++ : temp--; // 7 бірақ 8
+// console.log(temp++) //8 бірақ 9
+// console.log(temp--) //9 бірақ 8
+// console.log(++temp) //9 
+// console.log(--temp) //8
+// console.log(temp) //8
+
+// temp > 0 ? --temp : temp--;  //9
+// console.log(temp--) //9 but 8
+// console.log(++temp) //9
+// console.log(temp--) //9 but 8
+// console.log(++temp) //9
+// console.log(temp--) //9 but 8
+// // 8
+// let isRainingr= 4
+
+// temp > 6? --temp : temp--;  //4 yj 3
+// console.log(temp--) //3 yj 2
+// console.log(++temp) //3
+// console.log(temp++) //3 yj 4
+// console.log(++temp) //5
+// console.log(temp--) 5 yj 4
+// console.log(temp--) 4 yj 3
+
+// HOME WORK 
+// 1
+// а) true  || false -> true (True)
+// б) true && false -> false (False)
+// в) false || false -> false (False)
+
+// 2
+// а) x / z = False
+// b) x && y = false
+// d) x && z = False
+
+// 3
+// Вычислить значение логического выражения при следующих значениях логических величин А, В и С: А = Истина, В = Ложь, С = Ложь:
+// а) не А и В; б) А или не В; в) А и В или С.
+// a) a && B = False
+// B) a / B = True
+// d) A && B / C = False
+
+// 4
+// a) X && Y = FALSE
+// B) X / Y = TRUE
+// C) X / Y && Z = TRUE
+
+// 5
+// Вычислить значение логического выражения при следующих значениях логических величин А, В и С: А = Истина, В = Ложь, С = Ложь:
+// а) А или В и не С; 
+// г) А и не В или С;
+// б) не А и не В; 
+// д) А и (не В или С);
+// в) не (А и С) или В; 
+// е) А или (не (В и С)).
+
+// A / B && A = TRUE
+// A && A / C = TRUE
+// C && C = FALSE
+// A && (A / C) = TRUE
+// (B && C) / B = FALSE
+// A / (A (B && C)) = TRUE
+
+// 6
+// Вычислить значение логического выражения при следующих значениях логических величин X, Y и Z: X = Ложь, Y = Ложь, Z = Истина:
+// а) X или Y и не Z;
+// г) X и не Y или Z;
+// б) не X и не Y; 
+// д) X и (не Y или Z);
+// в) не (X и Z) или Y; 
+// е) X или (не (Y или Z)).
+
+// X / Y && X = FALSE
+// X && Z / Z = TRUE
+// Z & Z = TRUE
+// X && (Z / Z) = FALSE
+// (Y & Z) / Y = FALSE
+// X / (X (Y / Z) = TRUE
+
+// 7
+// Вычислить значение логического выражения при следующих значениях логических величин А, В и С: А = Истина, В = Ложь, С = Ложь:
+// а) А или не (А и В) или С;
+// б) не А или А и (В или С);
+// в) (А или В и не С) и С.
+
+// A / (B && A) / A = TRUE
+// B / B && (A / A) = FALSE
+// (A / B & A) && C = FALSE
+
+// 8
+// Вычислить значение логического выражения при следующих значениях логических величин X, Y и Z: X = Ложь, Y = Истина, Z = Ложь:
+// а) X и не (Z или Y) или не Z;
+// б) не X или X и (Y или Z);
+// в) (X или Y и не Z) и Z.
+
+// X && (Y / Z) / Y = TRUE
+// Y / Y && (Z / Y) = FALSE
+// (X / Y && Y) && Z = FALSE
+
+// 9
+// Вычислить значение логического выражения при следующих значениях логических величин X, Y и Z: X = Истина, Y = Ложь, Z = Ложь:
+// а) не X или не Y или не Z;
+// б) (не X или не Y) и (X или Y);
+// в) X и Y или X и Z или не Z.
+
+// Y / X / X = TRUE
+// (Y / X) && (X / Y) = TRUE
+// X && Y / X && Z / X = TRUE
+
+// 10
+// Вычислить значение логического выражения при следующих значениях логических величин А, В и С: А = Ложь, В = Ложь, С = Истина:
+// а) (не А или не В) и не С;
+// б) (не А или не В) и (А или В);
+// в) А и В или А и С или не С.
+
+// (C / C) & A = FALSE
+// (C / C) && (A / B) = FALSE
+// A && B / A && C / A = FALSE 
