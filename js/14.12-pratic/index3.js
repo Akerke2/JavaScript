@@ -17,8 +17,8 @@
 // console.log(4 != 3) //true  / тең емес деген оператор тең емес болғандықтан тру береді
 
 // АРИФМЕТИКАЛЫҚ ОПЕРАТОРЛАР
-// console.log(10 / 4) // 2.5  
-console.log(15 % 2) // 3  27 / 6 *6 -27 = 
+// // console.log(10 / 4) // 2.5  
+// console.log(15 % 2) // 3  27 / 6 *6 -27 = 
 
 
 // дәреже
@@ -183,7 +183,7 @@ console.log(15 % 2) // 3  27 / 6 *6 -27 =
 
 // let check = !(4 > 3)
 // console.log(check)  // false қайтарады
-
+//  мәнін керсінше ауыстырады
 
 // let isLightOn = true
 // let isLightOff = !isLightOn           // false
@@ -235,7 +235,7 @@ console.log(15 % 2) // 3  27 / 6 *6 -27 =
 // true  болған кезде ? сұрақ белгісі орындалады
 // фолс болса кос нүкте
 
-let isRaining = 10
+// let isRaining = 10
 // // temp > 0 ? temp++ : temp--; //5 бірақ 6
 // // console.log(--temp)  //5 точно
 // // console.log(temp++)  //5 бірақ 6
@@ -360,3 +360,105 @@ let isRaining = 10
 // (C / C) & A = FALSE
 // (C / C) && (A / B) = FALSE
 // A && B / A && C / A = FALSE 
+
+
+
+// let temp = 20
+// temp > 0 ? temp++ : --temp;  //
+// console.log(temp--) //21
+// console.log(temp++) //20
+// console.log(++temp) //22
+// console.log(--temp) //21
+// console.log(temp)
+
+// alert("heloo world") //төбесінен сообщение сияқты келеді
+
+// let name = prompt("Enter your name")
+// alert(`hello ${name}`)
+
+// let year = prompt("enter your year")
+// alert(`You are somthing years old ${year-2023}`)
+
+// let a = Number(prompt("a"))
+// let B = Number(prompt("b"))
+// alert(`${a} * ${B} = ${a * B}
+//     ${a} / ${B} = ${a - B}
+//     ${a} - ${B} = ${a - B}`)
+// prompt инпут еңгізу
+// намьер деген пайтондағы инт сияқты санға айналдырып аламыз намбер арқылы промт жазған затты стринг яғни текст
+
+// let agree = confirm("are you sure to delete")
+
+// agree
+// ? alert ("deleted")
+// : alert("Not deleted")
+// confirm true or false қайтарды typeoff boolean
+
+// let age = prompt("are you adult")
+// age > 18
+// ? alert("daus bere alasuz")
+// : alert("daus bere almaisuz")
+
+
+// hw
+// // 1 
+// let base = Number(prompt("base"))
+// let height = Number(prompt("enter height"))
+// alert(`${0.5} * ${base} * ${height} = ${0.5 * base * height}`)
+
+// 2
+// let a = Number(prompt("a"))
+// let b = Number(prompt("b"))
+// let c = Number(prompt("c"))
+// alert(`${a} + ${b} + ${c} = ${ a + b +c}`)
+
+// 3
+// let islength = Number(prompt("lenght"))
+// let iswith = Number(prompt("wit"))
+// alert(`${islength} * ${iswith} = ${islength * iswith}`)
+// alert(` 2 * ${islength} + ${iswith} = ${2 * islength + iswith}`)
+
+// 4
+// let r = Number(prompt("r"))
+// let pi = 3.14
+// alert(`${pi} * ${r} * ${r} = ${pi * r * r}`)
+// alert(` 2 * ${pi} * ${r} = ${2 * pi * r}`)
+
+// // 5
+// let m = 2
+// let x = 2 / m
+// let y = -2
+// alert(`slope: ${m}
+// x: ${x}
+// y: ${y}`)
+
+// // 6
+// let x1 = 2
+// let y1 = 2
+// let x2 = 6
+// let y2 = 10
+// let o = (y2 - y1) / (x2 - x1)
+// alert(`Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)${o}`)
+
+// 7
+// біріншісі оңай екіншісі нормально
+
+// 8
+// y (y = x2 + 6x + 9)
+
+// let x = Number(prompt("x"))
+// let h = 2
+// let k = 6
+// let o = 9
+// alert(`${x}*${h} + ${k}${x} + ${o} = ${x * h + 6 * x + 9}`)
+
+// 9
+// let h = Number(prompt("Enter hours"))
+// let r = Number(prompt("Enter rate per hour"))
+// alert(h * r)
+
+// 10
+let name = prompt("name")
+name.length > 7
+? alert(" name is short.")
+: alert("name is long ")
