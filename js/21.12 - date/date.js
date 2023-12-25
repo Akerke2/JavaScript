@@ -1,6 +1,8 @@
 // Date Object 
 // Мысалы қанша күн бұрын шықаныны есептек үшін 
 
+//сан мен немесе стрингпен алуға болады 
+
 // let now = new Date();
 // console.log(now);
 
@@ -222,7 +224,7 @@
 // console.log(!(Math.ceil(12 / 5) > 5)  Math.sqrt(12) != Math.ceil(29 % 7) && Math.pow(2, 3) % 2 == 2  Math.ceil(12 / 4) >= 4);//true
 // console.log(!(Math.round(4 / 5) > 5) && Math.sqrt(14) != Math.min(7, Math.ceil(7 / 3))  Math.ceil(29 % 7) <= 12 && Math.pow(2, 3) % 2 == 2  Math.ceil(12 / 2) >= 2);//true
 
-// ГЕТТАЙМ
+// // ГЕТТАЙМ
 // let date1 = new Date(2022, 0, 15);
 // let date2 = new Date(2022, 6, 1);
 // result = date2.getTime() - date1.getTime()
@@ -246,7 +248,7 @@
 // date1 = new Date(2023, 2, 10);
 // date2 = new Date(2023, 9, 20);
 // let dif = Math.abs(date1 - date2)
-// let day = Math.floor(dif / (1000 * 60 * 60 * 24))
+// let day = Math.round(dif / (1000 * 60 * 60 * 24))
 // let weeks = Math.round(dif / (1000 * 60 * 60 * 24 * 7))
 // let month = Math.round(dif / (1000 * 60 * 60 * 24 * 30))
 // console.log(`days:${day} weeks:${weeks} month:${month}`);
@@ -293,7 +295,7 @@
 // console.log([date1, date2]);
 
 // date1 = new Date(2022, 11, 1);
-// date2 = new Date(2023, 6, 22);
+// date2 = new Date(2023, 6, 22); 
 // let dif = Math.abs(date1 - date2)
 // let day = Math.round(dif / (1000 * 60 * 60 * 24))
 // let month = Math.round(dif / (1000 * 60 * 60 * 24 * 30))
@@ -315,3 +317,5 @@
 // let month = Math.round(dif / (1000 * 60 * 60 * 24 * 30))
 // let week = Math.round(dif / (1000 * 60 * 60 * 24 * 7))
 // console.log([date1, date2]);
+
+
