@@ -450,7 +450,7 @@
 // let h = 2
 // let k = 6
 // let o = 9
-// alert(`${x}*${h} + ${k}${x} + ${o} = ${x * h + 6 * x + 9}`)
+// alert(`${xh} + ${kx} + ${o} = ${x * h + k * x + o}`)
 
 // 9
 // let h = Number(prompt("Enter hours"))
@@ -460,5 +460,5 @@
 // 10
 let name = prompt("name")
 name.length > 7
-? alert(" name is short.")
-: alert("name is long ")
+? alert("name is long")
+: alert("name is short")
