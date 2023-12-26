@@ -167,9 +167,236 @@
 // }
 
 // 2
-let year = prompt("Eneter year")
-if (year % 4 == 0) {
-    console.log(" leap year")
-}else{
-    console.log(" this is not leap year")
-}
+// let year = prompt("Eneter year")
+// if (year % 4 == 0) {
+//     console.log(" leap year")
+// }else{
+//     console.log(" this is not leap year")
+// }
+
+// x = 24
+// y = 33
+
+// if (x++ % 5 != 0 && --y % 4 == 0) {
+//     console.log("hi")
+// } else {
+//     console.log("hey")
+// }
+
+// switch
+
+
+
+// let grade = 4
+// switch(grade) {
+//     case 2: console.log("Very bad")
+//     break
+//     case 3: console.log("Satyfying")
+//     break
+//     case 4: console.log("good")
+//     break
+//     case 5: console.log("Very good")
+//     break
+//     default:
+//         console.log("Invalid grade")
+// }
+
+// let password = "12sssikdfld"
+// switch (password.length >= 8) {
+//     case true:
+//     default:
+// }
+ 
+
+// let city = "Astana"
+// switch (city.length) {
+//     case "Astana":
+//     case "Almaty":
+//     case "Karaganda":
+//     default:
+// }
+// default деген элс
+
+
+// let city = "Astana"
+// switch (city[0]) {
+//     case "A":
+//     case "B":
+//     case "K":
+//     default:
+// } // КЕЙСТІҢ ІШІНДЕ БОЛУЫ МҮМКІН ВАРИАНТТАР немесе варианттар
+
+// let num = 18
+
+// switch(num == 0) {
+//     case true:
+//         console.log("the number is zero")
+//         break
+//     default:
+//         switch (num < 0) {
+//             case false:
+//                 switch (num % 2) {
+//                     case 0:
+//                         console.log("Even number")
+//                         break
+//                     default:
+//                         console.log("odd number")
+//                 }
+//                 break
+//               default: 
+//               console.log("The number is negative")
+//             }
+// }
+
+
+// КЕЙС немеСЕ ДЕФУЛТТЫҢ ІШІНЕН АШУ КЕРЕК СУИЧТІҢ ІШІНЕН АШЫЛМАЙДЫ!
+//  default: console.log("The number is zero")
+
+
+// 4,37
+// let num = Number(prompt("enter num is -5, 3"))
+// if (-5 < num && num < 3) {
+//     console.log(`принадлежит`)
+// }
+// else{console.log("не принадлежит")}
+
+
+// let y = Number(prompt("enter y"))
+// let x = Number(prompt("enter x"))
+// if (x > 3 && y > 2) {
+//     console.log("hits the spot")
+// }
+// else{console.log("not hits the spot")}
+
+// b
+
+// let y = Number(prompt("enter y"))
+// let x = Number(prompt("enter x"))
+// if (x < -2 && y < -4) {
+//     console.log("hits the spot")
+// }
+// else{console.log("not hits the spot")}
+
+// HOME WORK
+// let age = +prompt("eneter your age")
+// switch (age >= 18) {
+//     case true: console.log("You are old enough to drive.")
+//     break
+// }
+// switch (age <= 18) {
+//     case true: console.log(`You are left with ${18 - age} years to drive.`)
+//     break
+// }
+
+// 2
+// myage = +prompt("enter myage")
+// yourage = +prompt("enter yourage")
+// switch (myage > yourage) {
+//     case true: console.log(`me are ${myage - yourage}`)
+// }
+// switch (myage < yourage) {
+//     case true: console.log(`You are ${yourage - myage} years older than me.`)
+// }
+
+// // 3
+// let a = 4
+// let b = 3
+// switch (a > b) {
+//     case true: console.log(`${a}is greater than ${b}`)
+// }
+// switch (a < b) {
+//     case true: console.log(`${b}is greater than ${a}`)
+// }
+// 4
+// num = +prompt("num")
+// switch (num % 2 == 0) {
+//     case true: console.log("even")
+//     break
+// default: 
+//     switch (num % 2 == 1) {
+//         case true: console.log("odd")}
+// }
+
+// 5
+// LEVEL 2
+// let month = prompt("eneter month")
+// switch (month) {
+//     case "April":
+//     case "May":
+//     case "March":
+//         console.log("Spring")
+//         break
+//     case 'december':
+//     case 'january':
+//     case 'february':
+//         console.log("Winter")
+//         break
+//     case 'June':
+//     case 'July':
+//     case 'August':
+//         console.log("Summer")
+//         break
+//     case 'september':
+//     case 'october':
+//     case 'november':
+//         console.log("Autumn");
+//         break;
+// }
+
+// let month = prompt("What is the day  today")
+// switch (month) {
+//     case 'monday':
+//     case 'tuesday':
+//     case 'wednesday':
+//     case 'thursday':
+//     case 'friday':
+//         console.log(`${month} working day`);
+//         break;
+//     case 'saturday':
+//     case 'sunday':
+//             console.log(`${month} weekend day`);
+//             break;
+// }
+
+// LEVEL3
+// let month = prompt("Enter a month:")
+// switch (month) {
+//     case "january":
+//         console.log("31 days")
+//         break
+//     case "february" :
+//         console.log("28 days")
+//     break
+//     case "october":
+//         console.log("31 days")
+//         break
+//     case 'december':
+//         console.log(`31 days`);
+//         break
+//     case 'november':
+//         console.log(`30 days`)
+//         break;
+//     case 'january':
+//         console.log(`31 days`);
+//         break
+//     case 'march':
+//         console.log(`31 days`);
+//         break
+//     case 'may':
+//         console.log(`31 days`);
+//         break
+//     case 'july':
+//         console.log(`31 days`);
+//         break
+//     case 'august':
+//         console.log(`31 days`);
+//         break
+// }
+
+// let year = +prompt("enter year")
+// switch (year % 4 == 0) {
+//     case true:
+//         console.log("Leap year")
+//         break
+// default: console.log("not leap year")
+// }
