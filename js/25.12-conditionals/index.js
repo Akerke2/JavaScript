@@ -308,14 +308,14 @@
 //     case true: console.log(`${b}is greater than ${a}`)
 // }
 // 4
-// num = +prompt("num")
-// switch (num % 2 == 0) {
-//     case true: console.log("even")
-//     break
-// default: 
-//     switch (num % 2 == 1) {
-//         case true: console.log("odd")}
-// }
+num = +prompt("num")
+switch (num % 2 == 0) {
+    case true: console.log("even")
+    break
+default: 
+    
+             console.log("odd")}
+
 
 // 5
 // LEVEL 2
