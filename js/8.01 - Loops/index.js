@@ -336,8 +336,10 @@
 // 14
 // Уникальный 5 элемент шығаратын программа 
 // 0-5 5-10 10-15 15-20 20-25 барлығының аралығы 5 ке тең сол үшін 5 ке көбейтеміз
+
 // ал екінші 5 қай санан басталатынын, интервалдың басқы саны білдіреді
 //  і көбейттік өйткені 
+
 // let numbers = []
 // for (let i = 0; i <= 5; i++) {
 //     numbers.push(Math.floor(Math.random() * 5) + i * 5) // 
@@ -394,23 +396,23 @@
 
 // 5
 // жоғарыдағы массивтің ленз шығару үшін
-// const countries = [
-//     'Albania',
-//     'Bolivia',
-//     'Canada',
-//     'Denmark',
-//     'Ethiopia',
-//     'Finland',
-//     'Germany',
-//     'Hungary',
-//     'Ireland',
-//     'Japan',
-//     'Kenya'
-// ]
-// let o = []
-// for (let i = 0; i < countries.length; i++) {
-//     o.push(countries[i].length)
-// } console.log(o)
+const countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+]
+let o = []
+for (let i = 0; i < countries.length; i++) {
+    o.push(countries[i].length)
+} console.log(o)
 
 // 6
 // const countries = [
@@ -609,12 +611,12 @@
 // // }
 
 // let numbers = [34, 23, 78, 35, 90]
-// // let k = 0
-// // for (let nums of numbers) {
-// //     k += nums
-// // } console.log(k)
+// let k = 0
+// for (let nums of numbers) {
+//     k += nums
+// } console.log(k)
 
-// // 
+// // // 
 // let u = 0
 // for (let l of numbers) {
 //     if (l % 2 == 1){
@@ -723,15 +725,15 @@
 // } console.log(countries)
 
 
-// let i = 0
-// while (i < countries.length) {
-//     if (countries[i][0] !== "A") {
-//         i++
-//         continue
-//     }
-//     console.log(countries[i])
-//     i++
-// }
+let i = 0
+while (i < countries.length) {
+    if (countries[i][0] !== "A") {
+        i++
+        continue
+    }
+    console.log(countries[i])
+    i++
+}
 
 // for (let o of countries) {
 //     if (o == "Germany") {
@@ -832,201 +834,201 @@
 // console.log(mernStack)
 
 // 4
-const countries = [
-    'Afghanistan',
-    'Albania',
-    'Algeria',
-    'Andorra',
-    'Angola',
-    'Antigua and Barbuda',
-    'Argentina',
-    'Armenia',
-    'Australia',
-    'Austria',
-    'Azerbaijan',
-    'Bahamas',
-    'Bahrain',
-    'Bangladesh',
-    'Barbados',
-    'Belarus',
-    'Belgium',
-    'Belize',
-    'Benin',
-    'Bhutan',
-    'Bolivia',
-    'Bosnia and Herzegovina',
-    'Botswana',
-    'Brazil',
-    'Brunei',
-    'Bulgaria',
-    'Burkina Faso',
-    'Burundi',
-    'Cambodia',
-    'Cameroon',
-    'Canada',
-    'Cape Verde',
-    'Central African Republic',
-    'Chad',
-    'Chile',
-    'China',
-    'Colombi',
-    'Comoros',
-    'Congo (Brazzaville)',
-    'Congo',
-    'Costa Rica',
-    "Cote d'Ivoire",
-    'Croatia',
-    'Cuba',
-    'Cyprus',
-    'Czech Republic',
-    'Denmark',
-    'Djibouti',
-    'Dominica',
-    'Dominican Republic',
-    'East Timor (Timor Timur)',
-    'Ecuador',
-    'Egypt',
-    'El Salvador',
-    'Equatorial Guinea',
-    'Eritrea',
-    'Estonia',
-    'Ethiopia',
-    'Fiji',
-    'Finland',
-    'France',
-    'Gabon',
-    'Gambia, The',
-    'Georgia',
-    'Germany',
-    'Ghana',
-    'Greece',
-    'Grenada',
-    'Guatemala',
-    'Guinea',
-    'Guinea-Bissau',
-    'Guyana',
-    'Haiti',
-    'Honduras',
-    'Hungary',
-    'Iceland',
-    'India',
-    'Indonesia',
-    'Iran',
-    'Iraq',
-    'Ireland',
-    'Israel',
-    'Italy',
-    'Jamaica',
-    'Japan',
-    'Jordan',
-    'Kazakhstan',
-    'Kenya',
-    'Kiribati',
-    'Korea, North',
-    'Korea, South',
-    'Kuwait',
-    'Kyrgyzstan',
-    'Laos',
-    'Latvia',
-    'Lebanon',
-    'Lesotho',
-    'Liberia',
-    'Libya',
-    'Liechtenstein',
-    'Lithuania',
-    'Luxembourg',
-    'Macedonia',
-    'Madagascar',
-    'Malawi',
-    'Malaysia',
-    'Maldives',
-    'Mali',
-    'Malta',
-    'Marshall Islands',
-    'Mauritania',
-    'Mauritius',
-    'Mexico',
-    'Micronesia',
-    'Moldova',
-    'Monaco',
-    'Mongolia',
-    'Morocco',
-    'Mozambique',
-    'Myanmar',
-    'Namibia',
-    'Nauru',
-    'Nepal',
-    'Netherlands',
-    'New Zealand',
-    'Nicaragua',
-    'Niger',
-    'Nigeria',
-    'Norway',
-    'Oman',
-    'Pakistan',
-    'Palau',
-    'Panama',
-    'Papua New Guinea',
-    'Paraguay',
-    'Peru',
-    'Philippines',
-    'Poland',
-    'Portugal',
-    'Qatar',
-    'Romania',
-    'Russia',
-    'Rwanda',
-    'Saint Kitts and Nevis',
-    'Saint Lucia',
-    'Saint Vincent',
-    'Samoa',
-    'San Marino',
-    'Sao Tome and Principe',
-    'Saudi Arabia',
-    'Senegal',
-    'Serbia and Montenegro',
-    'Seychelles',
-    'Sierra Leone',
-    'Singapore',
-    'Slovakia',
-    'Slovenia',
-    'Solomon Islands',
-    'Somalia',
-    'South Africa',
-    'Spain',
-    'Sri Lanka',
-    'Sudan',
-    'Suriname',
-    'Swaziland',
-    'Sweden',
-    'Switzerland',
-    'Syria',
-    'Taiwan',
-    'Tajikistan',
-    'Tanzania',
-    'Thailand',
-    'Togo',
-    'Tonga',
-    'Trinidad and Tobago',
-    'Tunisia',
-    'Turkey',
-    'Turkmenistan',
-    'Tuvalu',
-    'Uganda',
-    'Ukraine',
-    'United Arab Emirates',
-    'United Kingdom',
-    'United States',
-    'Uruguay',
-    'Uzbekistan',
-    'Vanuatu',
-    'Vatican City',
-    'Venezuela',
-    'Vietnam',
-    'Yemen',
-    'Zambia',
-    'Zimbabwe'
-]
+// const countries = [
+//     'Afghanistan',
+//     'Albania',
+//     'Algeria',
+//     'Andorra',
+//     'Angola',
+//     'Antigua and Barbuda',
+//     'Argentina',
+//     'Armenia',
+//     'Australia',
+//     'Austria',
+//     'Azerbaijan',
+//     'Bahamas',
+//     'Bahrain',
+//     'Bangladesh',
+//     'Barbados',
+//     'Belarus',
+//     'Belgium',
+//     'Belize',
+//     'Benin',
+//     'Bhutan',
+//     'Bolivia',
+//     'Bosnia and Herzegovina',
+//     'Botswana',
+//     'Brazil',
+//     'Brunei',
+//     'Bulgaria',
+//     'Burkina Faso',
+//     'Burundi',
+//     'Cambodia',
+//     'Cameroon',
+//     'Canada',
+//     'Cape Verde',
+//     'Central African Republic',
+//     'Chad',
+//     'Chile',
+//     'China',
+//     'Colombi',
+//     'Comoros',
+//     'Congo (Brazzaville)',
+//     'Congo',
+//     'Costa Rica',
+//     "Cote d'Ivoire",
+//     'Croatia',
+//     'Cuba',
+//     'Cyprus',
+//     'Czech Republic',
+//     'Denmark',
+//     'Djibouti',
+//     'Dominica',
+//     'Dominican Republic',
+//     'East Timor (Timor Timur)',
+//     'Ecuador',
+//     'Egypt',
+//     'El Salvador',
+//     'Equatorial Guinea',
+//     'Eritrea',
+//     'Estonia',
+//     'Ethiopia',
+//     'Fiji',
+//     'Finland',
+//     'France',
+//     'Gabon',
+//     'Gambia, The',
+//     'Georgia',
+//     'Germany',
+//     'Ghana',
+//     'Greece',
+//     'Grenada',
+//     'Guatemala',
+//     'Guinea',
+//     'Guinea-Bissau',
+//     'Guyana',
+//     'Haiti',
+//     'Honduras',
+//     'Hungary',
+//     'Iceland',
+//     'India',
+//     'Indonesia',
+//     'Iran',
+//     'Iraq',
+//     'Ireland',
+//     'Israel',
+//     'Italy',
+//     'Jamaica',
+//     'Japan',
+//     'Jordan',
+//     'Kazakhstan',
+//     'Kenya',
+//     'Kiribati',
+//     'Korea, North',
+//     'Korea, South',
+//     'Kuwait',
+//     'Kyrgyzstan',
+//     'Laos',
+//     'Latvia',
+//     'Lebanon',
+//     'Lesotho',
+//     'Liberia',
+//     'Libya',
+//     'Liechtenstein',
+//     'Lithuania',
+//     'Luxembourg',
+//     'Macedonia',
+//     'Madagascar',
+//     'Malawi',
+//     'Malaysia',
+//     'Maldives',
+//     'Mali',
+//     'Malta',
+//     'Marshall Islands',
+//     'Mauritania',
+//     'Mauritius',
+//     'Mexico',
+//     'Micronesia',
+//     'Moldova',
+//     'Monaco',
+//     'Mongolia',
+//     'Morocco',
+//     'Mozambique',
+//     'Myanmar',
+//     'Namibia',
+//     'Nauru',
+//     'Nepal',
+//     'Netherlands',
+//     'New Zealand',
+//     'Nicaragua',
+//     'Niger',
+//     'Nigeria',
+//     'Norway',
+//     'Oman',
+//     'Pakistan',
+//     'Palau',
+//     'Panama',
+//     'Papua New Guinea',
+//     'Paraguay',
+//     'Peru',
+//     'Philippines',
+//     'Poland',
+//     'Portugal',
+//     'Qatar',
+//     'Romania',
+//     'Russia',
+//     'Rwanda',
+//     'Saint Kitts and Nevis',
+//     'Saint Lucia',
+//     'Saint Vincent',
+//     'Samoa',
+//     'San Marino',
+//     'Sao Tome and Principe',
+//     'Saudi Arabia',
+//     'Senegal',
+//     'Serbia and Montenegro',
+//     'Seychelles',
+//     'Sierra Leone',
+//     'Singapore',
+//     'Slovakia',
+//     'Slovenia',
+//     'Solomon Islands',
+//     'Somalia',
+//     'South Africa',
+//     'Spain',
+//     'Sri Lanka',
+//     'Sudan',
+//     'Suriname',
+//     'Swaziland',
+//     'Sweden',
+//     'Switzerland',
+//     'Syria',
+//     'Taiwan',
+//     'Tajikistan',
+//     'Tanzania',
+//     'Thailand',
+//     'Togo',
+//     'Tonga',
+//     'Trinidad and Tobago',
+//     'Tunisia',
+//     'Turkey',
+//     'Turkmenistan',
+//     'Tuvalu',
+//     'Uganda',
+//     'Ukraine',
+//     'United Arab Emirates',
+//     'United Kingdom',
+//     'United States',
+//     'Uruguay',
+//     'Uzbekistan',
+//     'Vanuatu',
+//     'Vatican City',
+//     'Venezuela',
+//     'Vietnam',
+//     'Yemen',
+//     'Zambia',
+//     'Zimbabwe'
+// ]
 // let mas = []
 // for (let i = 0; i < countries.length; i++) {
 //     if (countries[i].includes("land")) {
@@ -1063,17 +1065,17 @@ const countries = [
 // }console.log(m)
 
 // 8
-// let two = []
-// for (let i = 0; i < countries.length; i++) {
-//     if (countries[i].length <= 5) {
-//         two.push(countries[i])
-//     }
-// }console.log(two)
-
-// 9
-let upper = []
+let two = []
 for (let i = 0; i < countries.length; i++) {
-    countries[i] = countries[i].toUpperCase()
-    upper.push(countries[i])
-} 
-console.log(upper)
+    if (countries[i].length <= 5) {
+        two.push(countries[i])
+    }
+}console.log(two)
+
+// // 9
+// let upper = []
+// for (let i = 0; i < countries.length; i++) {
+//     countries[i] = countries[i].toUpperCase()
+//     upper.push(countries[i])
+// } 
+// console.log(upper)

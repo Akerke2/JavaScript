@@ -171,7 +171,7 @@
 
 
 
-
+ 
 // toUpperCase(): ӘРІПТЕРДІ БАС ӘРІП ҚЫЛАДЫ 
 // let str = 'JavaScript'
 // console.log(str.toUpperCase())

@@ -1,4 +1,3 @@
-
 // иф элс
 // let x = 5;
 // let y = 7;
@@ -319,7 +318,7 @@ default:
 
 // 5
 // LEVEL 2
-// let month = prompt("eneter month")
+// let month = prompt("enter month")
 // switch (month) {
 //     case "April":
 //     case "May":
