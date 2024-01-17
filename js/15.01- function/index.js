@@ -189,29 +189,29 @@
 // }
 // bmi(99, 29)
 
-function sum(num1, num2) {
-    return num1 + num2;
-}
-sum(60, 40) // 100 осылай жазу 100 деп жаза салғанмаен тең
-console.log(sum(60, 40))
+// function sum(num1, num2) {
+//     return num1 + num2;
+// }
+// sum(60, 40) // 100 осылай жазу 100 деп жаза салғанмаен тең
+// console.log(sum(60, 40))
 
-function multiply(num1, num2) {
-    return num1 * num2;
-}
-console.log(multiply(15, 56))
-
-
-
-function divide(num3, num4) {
-    return num3 / num4;
-}
-console.log(divide(15, 3))
+// function multiply(num1, num2) {
+//     return num1 * num2;
+// }
+// console.log(multiply(15, 56))
 
 
-function subtract(num6, num7) {
-    return num6 - num7
-}
-console.log(subtract(2, 2))
+
+// function divide(num3, num4) {
+//     return num3 / num4;
+// }
+// console.log(divide(15, 3))
+
+
+// function subtract(num6, num7) {
+//     return num6 - num7
+// }
+// console.log(subtract(2, 2))
 
 
 
@@ -271,58 +271,179 @@ console.log(subtract(2, 2))
 
 // 2
 // ax2 + bx + c = 0.
-function solveQuadEquation(a, x, b, c) {
-    return sum(multiply(a, x ** 2), multiply(b, x), c)
-}
-console.log(solveQuadEquation(2, 2, 2, 2)) //8 + 4 + 2
+// function solveQuadEquation(a, x, b, c) {
+//     return sum(multiply(a, x ** 2), multiply(b, x), c)
+// }
+// console.log(solveQuadEquation(2, 2, 2, 2)) //8 + 4 + 2
 
-// 3
-// асты астына шығару үшін 
-function printArray(array) {
-    for (let i = 0; i < array.length; i++) {
-        console.log(array[i])
-    }
-}
-let lorray = [1, 2, 3, 4, 5];
-printArray(lorray);
+// // 3
+// // асты астына шығару үшін 
+// function printArray(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         console.log(array[i])
+//     }
+// }
+// let lorray = [1, 2, 3, 4, 5];
+// console.log(printArray(lorray)); 
 
-// 4
-// датаны шығару үшін 
-new Date()
-function showDateTime() {
-    let currentDate = new Date();
+// // 4
+// // датаны шығару үшін 
+// new Date()
+// function showDateTime() {
+//     let currentDate = new Date();
 
-    let day = currentDate.getDate();
-    let month = currentDate.getMonth() + 1;
-    let year = currentDate.getFullYear();
+//     let day = currentDate.getDate();
+//     let month = currentDate.getMonth() + 1;
+//     let year = currentDate.getFullYear();
 
-    let hours = currentDate.getHours();
-    let minutes = currentDate.getMinutes();
+//     let hours = currentDate.getHours();
+//     let minutes = currentDate.getMinutes();
 
-    day = day < 10 ? '0' + day : day;
-    month = month < 10 ? '0' + month : month; // тернарный оператор
-    hours = hours < 10 ? '0' + hours : hours;
-    minutes = minutes < 10 ? '0' + minutes : minutes;
+//     day = day < 10 ? '0' + day : day;
+//     month = month < 10 ? '0' + month : month; // тернарный оператор
+//     hours = hours < 10 ? '0' + hours : hours;
+//     minutes = minutes < 10 ? '0' + minutes : minutes;
 
-    let formattedDateTime = day + '/' + month + '/' + year + ' ' + hours + ':' + minutes;
-    console.log(formattedDateTime);
-}
+//     let formattedDateTime = day + '/' + month + '/' + year + ' ' + hours + ':' + minutes;
+//     console.log(formattedDateTime);
+// }
 
-console.log(showDateTime())
+// console.log(showDateTime())
 
-// LEVEL1
-// 15 
-// ең үлкен санды алу үшін макснамберсіз
-function findmax (num1, num2, num3) {
-    if (num1 >= num2 && num2 >= num3) {
-        return num1;
-    }
-    else if (num2 >= num1 && num2 >= num3) {
-        return b;
-    }
-    else {
-        return num3
-    }
+// // LEVEL1
+// // 15 
+// // ең үлкен санды алу үшін 
+// function findMax(num1, num2, num3){
+//     let max = Math.max(num1, num2, num3)
+//     return max
+// }
+// console.log(findMax(40, 10, 30))
 
-}
-console.log(findmax(5, 6, 7))
+
+
+
+// 17.01.24
+// периметр табу 3 бұрыштың
+// function p (num1) {
+//     return num1 + num1 + num1;
+// }
+// console.log(p(5))
+
+
+// function even (num2) {
+//     if (num2 % 2 == 1) {
+//         return num2 * 2
+//     }else{
+//         return num2 * 0
+//     }
+// }
+// console.log(even(5))
+
+// function solve(a, b, c) {
+//     let x1 = (-b + Math.sqrt(b**2 - 4 * a * c)) / 2 * a
+//     let x2 = (-b - Math.sqrt(b**2 - 4 * a * c)) / 2 * a
+//     return x1, x2
+// }
+
+// function sum (num1, num2) {
+//     return num1 + num2;
+// }
+// Classic function
+
+// const sum = function(num1, num2) {  // const
+//     return num1 + num2;
+// }
+// console.log(sum(1,5))
+
+// const multiply = function(num3, num4) {
+//     return num3 * num4;
+// }
+// console.log(multiply(5,6))
+
+// // ex
+
+// const num = (num5, num6) => {
+//     return num5 + num6
+// }
+// console.log(num(2, 2))
+
+// // Arrow function
+
+
+// let divide = (num1, num2) => {
+//     return num1 / num2
+// }
+// console.log(divide(15, 3))
+
+
+// let o = sum(divide(45, 5), multiply(7, 4))
+// console.log(o)
+
+// const lastname = (fname, lname) => {
+//     return `hello, ${fname}, ${lname}`;
+// }
+// console.log(lastname("Akerke", "Adikyzy"))
+
+
+
+
+// HW level2 7ex, aroow, 8 ex,arrow, 9 ex,arraw
+// 1
+// ARROW
+// let capiTalizeArray = arr => {
+//     let o = []
+//     for (const a of arr) {
+//         o.push(a.toUpperCase())
+//     }
+//     return o
+// }
+// const c = ["capitalizeArray"]
+// console.log(capiTalizeArray(c))
+
+// ex
+// let capiTalizeArray = function (arr) {
+//     return arr.toUpperCase()
+// }
+// let text = "capitalizeArray"
+// console.log(capiTalizeArray(text))
+
+// // 2
+// ex
+// let additem = function(item) {
+//     let newitem = []
+//     newitem.push(item)
+//     return newitem
+// }
+// let newd = "water"
+// console.log(additem(newd))
+
+// arrow
+// let additem = (item) => {
+//     let mas = []
+//     mas.push(item)
+//     return mas
+// }
+// console.log(additem("Pretty"))
+
+// // 3
+// // exx
+// let removeItem = function(index, text) {
+//     text.splice(index, 1);
+//     return text
+// }
+
+// let fruits = ["apple", "orange", "mango"]
+// let indexo = 1
+
+// let aire = removeItem(indexo, fruits)
+// console.log(aire)
+
+// // aroow
+// let removeItem = (index, text) => {
+//     text.splice(index, 2)
+//     return text
+// }
+// let fruts = ["mango", "papais", "banana"]
+// let indexo = 2
+// let j = removeItem(indexo, fruts)
+// console.log(j)
