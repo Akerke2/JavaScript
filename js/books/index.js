@@ -225,72 +225,291 @@
 // console.log(o)
 
 
-const users = [
-    {name: "Akerke", age: 16},
-    {name: "alina", age: 17},
-    {name: "aman", age: 18},
-    {name: "ruslan", age: 19},
-    {name: "aidar", age: 20},
-]
-// users.forEach (a => a.age += 5)
-// console.log(users)
+// const users = [
+//     {name: "Akerke", age: 16},
+//     {name: "alina", age: 17},
+//     {name: "aman", age: 18},
+//     {name: "ruslan", age: 19},
+//     {name: "aidar", age: 20},
+// ]
+// // users.forEach (a => a.age += 5)
+// // console.log(users)
 
 
-const city = users.map ((i) => {
-    return {name: i.name.toUpperCase(), age: i.age + 5, city: "Almaty"}
-})
-console.log(city)
+// const city = users.map ((i) => {
+//     return {name: i.name.toUpperCase(), age: i.age + 5, city: "Almaty"}
+// })
+// console.log(city)
 
-// МАПТА ЖАҢА ОБЬЕКТ АШАМЫЗ 
-// ФОРЕЙЯТА СОЛ ОБЬЕКТТА ӨЗГЕРТЕМІЗ
+// // МАПТА ЖАҢА ОБЬЕКТ АШАМЫЗ 
+// // ФОРЕЙЯТА СОЛ ОБЬЕКТТА ӨЗГЕРТЕМІЗ
 
-// 8 ДАЙ
-// 3 - 10 ТАПСЫРМА ЛЕВЕЛ 1
+// // 8 ДАЙ
+// // 3 - 10 ТАПСЫРМА ЛЕВЕЛ 1
 
 
+// // hw
+// // 1
+// const country = ["Japan", "USA", "Kanada", "Kazakhstan"]
+// country.forEach(count => console.log(count))
+
+// // 2
+// const names = ["Akerke", "Alina", "Sezim", "Danaya", "Aruna"]
+// names.forEach(name => console.log(name))
+
+// // 3
+// const number = [1, 2, 3, 4, 5]
+// number.forEach(numbers => console.log(numbers))
+
+// // 4
+// const countries = country.map ((c) => {
+//     return c.toUpperCase()
+// })
+// console.log(countries)
+
+// // 5
+// const countrieslenght = country.map ((length) => {
+//     return length.length
+// })
+// console.log(countrieslenght)
+
+// // 6
+// const numbes = [1, 2, 3, 4, 5]
+// const num = numbes.map ((n) => {
+//     return n **2
+// })
+// console.log(num)
+
+// // 7
+// const nam = ["Akerke", "Alina", "Sezim", "Danaya", "Aruna"]
+// const n = nam.map ((names) => {
+//     return names.toUpperCase()
+// })
+// console.log(n)
+
+// // 8
+// const products = [
+//   { product: 'banana', price: 3 },
+//   { product: 'mango', price: 6 },
+//   { product: 'potato', price: ' ' },
+//   { product: 'avocado', price: 8 },
+//   { product: 'coffee', price: 10 },
+//   { product: 'tea', price: '' },
+// ]
+// let price = products.map((prices) =>{
+//      return {product: prices.product, price: Number(prices.price)}
+// })
+// console.log(price)
+
+
+
+// 25.01.24
+// even number
+// фор ейч ештеңе қайтармайды 
+// форй ейя өзгерте алады НО НЕ ОБЬЯЗАТЕЛЬНО
+// let number = [5, 6, 7, 8, 9, 10]
+// number.forEach((evens) => {
+//         if (evens % 2 == 0) {
+//         console.log(evens)
+//     }
+// })
+
+// // *3 number
+// let nums = number.map((n) => {
+//     return n * 3
+// })
+// console.log(nums)
+
+// // summa odd
+// let odd = 0
+// number.forEach((o) => {
+//     if (o % 2 == 1) {
+//         odd += o
+//     }
+// })
+// console.log(odd)
+
+
+// Түбір астын табу жаңағы намьер деген маССИВТЕГІ САНДАРДЫҢ
+// МЭП масив ӨЗГЕРТПЕЙДІ БІРАҚ ЖАҢА МАССИВ ҚҰРАДЫ
+// let square = number.map ((s) => {
+//     return Math.sqrt(s)
+// })
+// console.log(square)
+
+// 
+// let number = [5, 6, 7, 8, 9, 10]
+// const evens = number.filter((num) => {
+//     return num % 2 == 0;  //условИЯНЫ РЕТУРНҒА ЖАЗАМЫЗ
+
+// })
+// console.log(evens)
+
+
+// // ұЗЫНДЫҒЫ 7 ДЕН ҮЛКЕН ҚАЛАЛАРДЫ ШЫҒАРАМЫЗ 
+// const cities = ['los Angeles', 'New York', 'Chicago', 'Hang Kong', 'San Franciso']
+// const len = cities.filter((c) => {
+//     return 7 < c.length
+// })
+// console.log(len)
+
+// // if s startwith
+// const s = cities.filter((start) => {
+//     return start.startsWith('S')
+// })
+// console.log(s)
+
+// // 1500 poplation < more
+// const citiesPoplation = [
+//     {city: "Los Ahgeles", population: 1000},
+//     {city: "New York", population: 2000},
+//     {city: "Chicago", population: 3000},
+//     {city: "Philadelphia", population: 4000},
+//     {city: "San Fracisco", population: 1500},
+// ]
+// const pop = citiesPoplation.filter((p) => {
+//     return p.population > 1500
+// })
+// console.log(pop)
+
+// 
+// const users = [
+//     {name: "Akerke", age: 16},
+//     {name: "alina", age: 17},
+//     {name: "aman", age: 18},
+//     {name: "ruslan", age: 19},
+//     {name: "aidar", age: 20},
+// ]
+// let us = users.filter ((u) => {
+//     return u.age > 18
+// })
+// console.log(us)
+
+// МАССИВ ҚАЙТАРАДЫ  ФИЛТР 
+
+// end With o 
+// const cities = ['los Angeles', 'New York', 'Chicago', 'Hang Kong', 'San Franciso']
+// let g = cities.find ((c) => {
+//     return c.endsWith('o')
+// })
+// console.log(g)
+
+// // РЕТУРН ЖАЗБАСАҚТА СОЛ БАР ДЕП ЕСЕПТЕЙДІ ЕГЕР БІР ЖОЛДЫҚ КОД ОР АРГУМЕНТ БОЛСА
+
+// const citiesPoplation = [
+//     {city: "Los Ahgeles", population: 1000},
+//     {city: "New York", population: 2000},
+//     {city: "Chicago", population: 3000},
+//     {city: "Philadelphia", population: 4000},
+//     {city: "San Fracisco", population: 1500},
+// ]
+// let pop = citiesPoplation.find ((p) => {
+//     return p.population === 3000
+// })
+// console.log(pop)
+
+
+// const users = [
+//     {name: "Akerke", age: 16},
+//     {name: "alina", age: 17},
+//     {name: "aman", age: 18},
+//     {name: "ruslan", age: 19},
+//     {name: "aidar", age: 20},
+//     {name: "Meirzhan", age: 20},
+// ]
+// let m = users.find(f => f.name.startsWith("M"))
+// console.log(m)
+
+// 
+// let number = [5, 6, 7, 8, 9, 10]
+// function double(nums) {
+//     let label = nums.map ((m) => {
+//        return m * 2
+//     })
+//     return label
+// }
+// console.log(double([5, 6, 7]))
+
+// function double(nums) {
+//     return nums.map(num => num * 2)
+// }
+// console.log(double([2, 3, 4]))
+// // or
+// console.log(double(number))
+
+
+// function increment(nums) {
+//     nums.forEach((value, index) => {
+//         nums[index] = value + 1
+//     });
+//     return nums
+// }
+// console.log(increment([2, 4]))
+
+
+// function addExclamation(array) {
+//     array.forEach((city, index) => {
+//         array[index] = city + "!"  // значентны АУЫСТЫРЫП ОР ӨЗГЕРТІП  сақтаймыз ИНДЕКСТЕ
+//     })
+//     return array
+// }
+// console.log(addExclamation(["Hello", 'Akerke']))
+
+
+
+// const citiesPoplation = [
+//     {city: "Los Ahgeles", population: 1000},
+//     {city: "New York", population: 2000},
+//     {city: "Chicago", population: 3000},
+//     {city: "Philadelphia", population: 4000},
+//     {city: "San Fracisco", population: 1500},
+// ]
+// function poplation (cities) {
+//    const o = cities.filter(city => city.population > 2000)
+//     return o
+// } 
+// console.log(poplation(citiesPoplation))
+
+
+// function cityPopulation (cities, poplation) {
+//     const p = cities.filter(city => city.population > poplation)
+//     return p
+// }
+// console.log(cityPopulation(citiesPoplation))
+
+// // 
+// function k (nums, num) {
+//     nums.forEch(value, index) {
+//     k[index] = value + num
+//     } return nums
+// }
+// console.log(k([5, 6]))
+// 11 -  15, 23 level1
 // hw
-// 1
-const country = ["Japan", "USA", "Kanada", "Kazakhstan"]
-country.forEach(count => console.log(count))
+// 11
+const countries = ['Egypt', 'Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand']
+const o = countries.filter(land => land.toLowerCase().includes(`land`)) // Что бы и большой буква шығу үшін надо ТОЛЙЕР КЕЙС СДЕЛАТЬ СОЛ ӘРІПТІ И ОЛ КІШКЕНЬАЙ ЛЭНД БОЛАДЫ ДА ШЫҒАДЫ
+// 12
+const l = countries.filter(length => length.length == 6)
 
-// 2
-const names = ["Akerke", "Alina", "Sezim", "Danaya", "Aruna"]
-names.forEach(name => console.log(name))
+// 13
+const k = countries.filter(count => count.length > 6)
 
-// 3
-const number = [1, 2, 3, 4, 5]
-number.forEach(numbers => console.log(numbers))
+// 14
+const s = countries.filter(starts => starts[0] === ("E"))
 
-// 4
-const countries = country.map ((c) => {
-    return c.toUpperCase()
-})
-console.log(countries)
+// 15
+const products = [
+    { product: 'banana', price: 3 },
+    { product: 'mango', price: 6 },
+    { product: 'potato', price: ' ' },
+    { product: 'avocado', price: 8 },
+    { product: 'coffee', price: 10 },
+    { product: 'tea', price: '' },
+]
+const p = products.filter(o => o.price)
+console.log(p)
 
-// 5
-const countrieslenght = country.map ((length) => {
-    return length.length
-})
-console.log(countrieslenght)
-
-// 6
-const numbes = [1, 2, 3, 4, 5]
-const num = numbes.map ((n) => {
-    return n **2
-})
-console.log(num)
-
-// 7
-const nam = ["Akerke", "Alina", "Sezim", "Danaya", "Aruna"]
-const n = nam.map ((names) => {
-    return names.toUpperCase()
-})
-console.log(n)
-
-// 8
-const product = ["Porsche", "Lambargini", "Mersedes", "BWM"]
-const pries = [125258, 7895624656, 7852342, 456251]
-const cars = product.map((car, euro) => {
-    return {product: car, pries: euro}
-})
-console.log(cars)
+// 23
+const a = countries.find(l => l.length == 6)
+console.log(a);
