@@ -1,23 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
+  <header>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Logotip_de_Glovo.png/1200px-Logotip_de_Glovo.png" />
+    <input type="search" placeholder="Search">
+    <button id="id-button">Get started</button>
+  </header>
+  <section class="main">
+    <div class="location">
+      <p>Delivering to <b id="name">Maulenov Street</b></p>
+    </div>
+    <div class="categories">
+      <div class="category">
+        <div class="egg">
+          <img
+            src="https://images.deliveryhero.io/image/customer-assets-glovo/category_icons/14a90fd277b0e025c6c351b2ad31fb9012c7077c12f2113536be60f11d6ef08d?t=W3siYXV0byI6eyJxIjoiaGlnaCJ9fSx7InJlc2l6ZSI6eyJtb2RlIjoiZml0Iiwid2lkdGgiOjEyMCwiaGVpZ2h0IjoxMjB9fV0=">
+        </div>
+        <p>Food</p>
+      </div>
 
-    <p id="firstParagraph">This is the first paragraph.</p>
-    <p>This is the second paragraph.</p>
-    <p>This is the third paragraph.</p>
-    <p>This is the fourth paragraph.</p>
+      <div class="category">
+        <div class="egg">
+          <img
+            src="https://images.deliveryhero.io/image/customer-assets-glovo/category_group_icons/cadec078a9bec44b786da73e8f7034ca4dc806e8cf58b885574b497fa468d635?t=W3siYXV0byI6eyJxIjoiaGlnaCJ9fSx7InJlc2l6ZSI6eyJtb2RlIjoiZml0Iiwid2lkdGgiOjEyMCwiaGVpZ2h0IjoxMjB9fV0=">
+        </div>
+        <p>Courier</p>
+      </div>
 
-    <script>
-        // Get the first paragraph using document.querySelector() and tag name
-        var firstParagraph = document.querySelector('p');
-        console.log(firstParagraph.textContent);
-    </script>
+      <div class="category">
+        <div class="egg">
+          <img
+            src="https://images.deliveryhero.io/image/customer-assets-glovo/category_icons/6da238423ad3ff331b27beddedf65c2d055124abece110e60465cd7fc0f3ad80?t=W3siYXV0byI6eyJxIjoiaGlnaCJ9fSx7InJlc2l6ZSI6eyJtb2RlIjoiZml0Iiwid2lkdGgiOjEyMCwiaGVpZ2h0IjoxMjB9fV0=">
+        </div>
+        <p>Pharmacy</p>
+      </div>
 
+      <div class="category">
+        <div class="egg">
+          <img
+            src="https://images.deliveryhero.io/image/customer-assets-glovo/category_icons/36cf8e6ffe1f91e575ae013a171ce035f31dc7f8f42a7ad22e51a50482c39255?t=W3siYXV0byI6eyJxIjoiaGlnaCJ9fSx7InJlc2l6ZSI6eyJtb2RlIjoiZml0Iiwid2lkdGgiOjEyMCwiaGVpZ2h0IjoxMjB9fV0=">
+        </div>
+        <p>Groceries</p>
+      </div>
+
+      <div class="category">
+        <div class="egg">
+          <img
+            src="https://images.deliveryhero.io/image/customer-assets-glovo/category_icons/c9335c5a0b8cd906e338ad2e6a07026239131b6ee2a2d1a74bd377afcd1de1d7?t=W3siYXV0byI6eyJxIjoiaGlnaCJ9fSx7InJlc2l6ZSI6eyJtb2RlIjoiZml0Iiwid2lkdGgiOjEyMCwiaGVpZ2h0IjoxMjB9fV0=">
+        </div>
+        <p>Glovo Express</p>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="section2">
+    <h3>Вам может понравиться </h3>
+    <div class="product_cards">
+      <div class="section2-container1">
+        <div class="section2-img">
+          <img
+            src="https://images.deliveryhero.io/image/stores-glovo/stores/9d4c128096139dd00ebaf2e09af5c630333497e0fa861a1ad0bb69d981697c48?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d"
+            alt="">
+        </div>
+        <div class="section2-text-container">
+          <p>Salam Bro</p>
+          <p>👍 92%(500+)</p>
+        </div>
+      </div>
+
+      2
+
+      <div class="section2-container1">
+        <div class="section2-img">
+          <img
+            src="https://images.deliveryhero.io/image/stores-glovo/stores/1b83179e9b3d0e87b2bcd473e8b42f617f8607ef5f12e2a7a044d506e70aa076?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d"
+            alt="">
+        </div>
+        <div class="section2-text-container">
+          <p>Bahandi</p>
+          <p>👍 97%(500+)</p>
+        </div>
+      </div>
+
+      3
+      <div class="section2-container1">
+        <div class="section2-img">
+          <img
+            src="https://images.deliveryhero.io/image/stores-glovo/stores/13f9c3a9d078f55ec50eef46067dfc8c2fdc75a6b9ee3cf9cc385d8ee21a32ca?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d"
+            alt="">
+        </div>
+        <div class="section2-text-container">
+          <p>I'm feel-good restaurants</p>
+          <p>👍 95%(500+)</p>
+        </div>
+      </div>
+      4
+      <div class="section2-container1">
+        <div class="section2-img">
+          <img
+            src="https://images.deliveryhero.io/image/stores-glovo/stores/d4648d512c4a987f61349dc7f086328f332ef6a719b63bde68f83512ad923aef?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d"
+            alt="">
+        </div>
+        <div class="section2-text-container">
+          <p>KFC</p>
+          <p>👍 95%(500+)</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    
+  </section> -->
+
+  <section class="section2">
+    <div>
+      <div class="section2-text-container">
+        <p><strong>Вам может понравиться</strong></p>
+      </div>
+      <div class="section2-card-parents">
+        <div class="section2-cards">
+          <div class="section2-cards-img">
+            <img class="img"
+              src="https://images.deliveryhero.io/image/stores-glovo/stores/9d4c128096139dd00ebaf2e09af5c630333497e0fa861a1ad0bb69d981697c48?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d"
+              alt="" height="100%" width="100%">
+          </div>
+          <p><strong>Salam Bro</strong></p>
+          <h6>👍 92%(500+)</h6>
+        </div>
+
+   <!-- 2 -->
+  <div class="section2-cards">
+          <div class="section2-cards-img">
+            <img class="img"
+              src="https://images.deliveryhero.io/image/stores-glovo/stores/1b83179e9b3d0e87b2bcd473e8b42f617f8607ef5f12e2a7a044d506e70aa076?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d"
+              alt="" height="100%" width="100%">
+          </div>
+          <p><strong>Bahandi</strong></p>
+          <h6>👍 97%(500+)</h6>
+        </div>
+
+        <div class="section2-cards">
+          <div class="section2-cards-img">
+            <img class="img"
+              src="https://images.deliveryhero.io/image/stores-glovo/stores/13f9c3a9d078f55ec50eef46067dfc8c2fdc75a6b9ee3cf9cc385d8ee21a32ca?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d"
+              alt="" height="100%" width="100%">
+          </div>
+          <p><strong>I'm feel-good restaurants</strong></p>
+          <h6>👍 95%(500+)</h6>
+        </div>
+
+        <div class="section2-cards">
+          <div class="section2-cards-img">
+            <img class="img"
+              src="https://images.deliveryhero.io/image/stores-glovo/stores/d4648d512c4a987f61349dc7f086328f332ef6a719b63bde68f83512ad923aef?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d"
+              alt="" height="100%" width="100%">
+          </div>
+          <p><strong>KFC</strong></p>
+          <h6>👍 95%(500+)</h6>
+        </div>
+
+
+
+
+
+
+
+        <div class="section2-cards">
+          <div class="section2-cards-img">
+            <img class="img"
+              src="https://images.deliveryhero.io/image/stores-glovo/stores/ab06a44ae442c05ff2ed59e2b1b9bbe492c5499a826e8787a8535971eadac6b2?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d"
+              alt="" height="100%" width="100%">
+          </div>
+          <p><strong>Gippo</strong></p>
+          <h6>👍 92%(500+)</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- <section class="product-cards">
+    <div class="product-text">
+      <img src="images/product-cards/newUserRecommendationsWidgetIconLight.png" alt="">
+      <h1 style="font-size: 35px; font-weight: 900;">Stores you might like</h1>
+    </div>
+
+    <section class="product-cards-container">
+
+      <div class="product-card">
+        <img style="border-radius: 20px; height: 165px;" src="https://images.deliveryhero.io/image/stores-glovo/stores/9d4c128096139dd00ebaf2e09af5c630333497e0fa861a1ad0bb69d981697c48?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d">
+        <h1 style="font-size: 33px; font-weight: 900;">Salam Bro</h1>
+        <div class="rating">
+          <img src="images/product-cards/rating_good.png">
+          93% (500+)
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img style="border-radius: 20px; height: 165px;" src="https://images.deliveryhero.io/image/stores-glovo/stores/ab06a44ae442c05ff2ed59e2b1b9bbe492c5499a826e8787a8535971eadac6b2?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d">
+        <h1 style="font-size: 33px; font-weight: 900;">Gippo</h1>
+        <div class="rating">
+          <img src="images/product-cards/rating_good.png">
+          93% (500+)
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img style="border-radius: 20px; height: 165px;" src="images/product-cards/mangal_doner.jpeg">
+        <h1 style="font-size: 33px; font-weight: 900;">Mangal doner</h1>
+        <div class="rating">
+          <img src="images/product-cards/rating_good.png">
+          92% (57)
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img style="border-radius: 20px; height: 165px;" src="https://images.deliveryhero.io/image/stores-glovo/stores/e4162688396f7915ec6a5d5888d2db650b4e5aca0ebdb00c77d0940d37f74438?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d">
+        <h1 style="font-size: 33px; font-weight: 900;">Zheka's Doner</h1>
+        <div class="rating">
+          <img src="images/product-cards/rating_good.png">
+          89% (194)
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img style="border-radius: 20px; height: 165px;" src="https://images.deliveryhero.io/image/stores-glovo/stores/50b0efb192619699c322276512203f519d994877da764c1053f691a8ffd407a3?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d">
+        <h1 style="font-size: 33px; font-weight: 900;">Burger King</h1>
+        <div class="rating">
+          <img src="images/product-cards/rating_good.png">
+          92% (500+)
+        </div>
+      </div>
+    </section>
+  </section> -->
+
+
+
+  <section id="food-cards">
+
+  </section>
+
+
+  <div class="container" id="container">
+    <!-- Numbers will be dynamically generated here -->
+  </div>
+
+
+
+
+  <script src="./index.js"></script>
 </body>
-</html>
 
+
+</html>

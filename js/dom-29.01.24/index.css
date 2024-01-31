@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(220, 200, 16); */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+
+    height: 50px;
+}
+
+header img {
+    width: 75px;
+}
+
+header input {
+    width: 250px;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+    height: 40px;
+}
+
+header button {
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: rgb(87, 193, 193);
+    padding: 15px;
+    width: 155px;
+    font-weight: 700;
+    margin: 90px;
+}
+
+.header-glovo-logo {
+    height: 50px;
+    width: 150px;
+}
+
+.section1 {
+    justify-content: center;
+}
+
+.section1 p {
+    font-size: 24px;
+}
+
+.section1-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.section1-icons {
+    background-color: aliceblue;
+    width: 120px;
+    height: 120px;
+    border-radius: 45% 30%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #FFC244FF;
+    height: 10vh;
+}
+
+header img {
+    width: 75px;
+}
+
+header input {
+    width: 30%;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+}
+
+header button {
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: #00A082FF;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+.main {
+    background-color: #FFC244FF;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+}
+
+.main .location {
+    height: 15vh;
+}
+
+.main .location p {
+    font-size: 24px;
+}
+
+.categories {
+    display: flex;
+    max-width: 50%;
+    max-height: 35vh;
+    gap: 15px;
+    align-items: stretch;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+}
+
+.egg {
+    border-radius: 46% 54% 54% 46%/58% 56% 44% 42%;
+    background-color: white;
+}
+
+.egg img {
+    transform: scale(0.75);
+}
+
+/* 2 section */
+.section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px;
+}
+.section2 h3{
+    display: flex;
+    justify-content: left;
+
+}
+
+
+
+.section2 p{ 
+    font-size: 24px;
+}
+/* 
+.section2-img {
+    height: 60px;
+    width: 300px;
+    
+} */
+
+.product_cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section2-text-container {
+    font-size: 24px;
+}
+
+.section2-cards-img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 120px;
+    border-radius: 85px;
+
+}
+
+.section2-card-parents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section2-cards {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section2-cards p {
+    font-size: 14px;
+}
+
+
+/* .product-cards {  slila u kogo to
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0px 350px;
+}
+
+.product-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 50px 0px 10px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 10px;
+}
+
+.product-cards-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50px;
+    width: 360px;
+    height: 300px;
+    gap: 10px;
+} */
+
+.img {
+    border-radius: 15px;
+}
