@@ -237,14 +237,14 @@
 
 
 // const city = users.map ((i) => {
-//     return {name: i.name.toUpperCase(), age: i.age + 5, city: "Almaty"}
+//     return {name: i.name.toUpperCase(), age: i.age + 5, city: "Almaty"} // новый ЭЛЕМЕНТ ҚОСУ ҮШІН ПРОСТО ОБЕКТТЫҢ ІШІНЕ ЖАЗА САЛАМЫЗ
 // })
 // console.log(city)
 
 // // МАПТА ЖАҢА ОБЬЕКТ АШАМЫЗ 
-// // ФОРЕЙЯТА СОЛ ОБЬЕКТТА ӨЗГЕРТЕМІЗ
+// // ФОРЕЙЧТА СОЛ ОБЬЕКТТА ӨЗГЕРТУГЕ БОЛАДЫ БІРАҚ НЕ ОБЬЯЗАТЕЛЬНО
 
-// // 8 ДАЙ
+// // 8 ДЭЙ
 // // 3 - 10 ТАПСЫРМА ЛЕВЕЛ 1
 
 
@@ -306,7 +306,7 @@
 // 25.01.24
 // even number
 // фор ейч ештеңе қайтармайды 
-// форй ейя өзгерте алады НО НЕ ОБЬЯЗАТЕЛЬНО
+// фор ейч өзгерте алады НО НЕ ОБЬЯЗАТЕЛЬНО
 // let number = [5, 6, 7, 8, 9, 10]
 // number.forEach((evens) => {
 //         if (evens % 2 == 0) {
@@ -330,10 +330,10 @@
 // console.log(odd)
 
 
-// Түбір астын табу жаңағы намьер деген маССИВТЕГІ САНДАРДЫҢ
+// Түбір астын табу жаңағы намбер деген маССИВТЕГІ САНДАРДЫҢ
 // МЭП масив ӨЗГЕРТПЕЙДІ БІРАҚ ЖАҢА МАССИВ ҚҰРАДЫ
 // let square = number.map ((s) => {
-//     return Math.sqrt(s)
+//     return Math.sqrt(s)  // түбірін табу ҮШІН МЭЗ СКЬЮРТИДІ ҚОЛДАНАМЫЗ
 // })
 // console.log(square)
 
@@ -478,38 +478,40 @@
 // console.log(cityPopulation(citiesPoplation))
 
 // // 
-// function k (nums, num) {
-//     nums.forEch(value, index) {
-//     k[index] = value + num
-//     } return nums
-// }
-// console.log(k([5, 6]))
+function k(nums) {
+    nums.forEch((value, index) => {
+        nums[index] = value + 
+})
+    return nums
+}
+console.log(k([5, 6]))
+
 // 11 -  15, 23 level1
 // hw
 // 11
-const countries = ['Egypt', 'Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand']
-const o = countries.filter(land => land.toLowerCase().includes(`land`)) // Что бы и большой буква шығу үшін надо ТОЛЙЕР КЕЙС СДЕЛАТЬ СОЛ ӘРІПТІ И ОЛ КІШКЕНЬАЙ ЛЭНД БОЛАДЫ ДА ШЫҒАДЫ
-// 12
-const l = countries.filter(length => length.length == 6)
+// const countries = ['Egypt', 'Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand']
+// const o = countries.filter(land => land.toLowerCase().includes(`land`)) // Что бы и большой буква шығу үшін надо ТОЙLЕР КЕЙС СДЕЛАТЬ СОЛ ӘРІПТІ И ОЛ КІШКЕНtАЙ ЛЭНД БОЛАДЫ ДА ШЫҒАДЫ
+// // 12
+// const l = countries.filter(length => length.length == 6)
 
-// 13
-const k = countries.filter(count => count.length > 6)
+// // 13
+// const k = countries.filter(count => count.length > 6)
 
-// 14
-const s = countries.filter(starts => starts[0] === ("E"))
+// // 14
+// const s = countries.filter(starts => starts[0] === ("E"))
 
-// 15
-const products = [
-    { product: 'banana', price: 3 },
-    { product: 'mango', price: 6 },
-    { product: 'potato', price: ' ' },
-    { product: 'avocado', price: 8 },
-    { product: 'coffee', price: 10 },
-    { product: 'tea', price: '' },
-]
-const p = products.filter(o => o.price)
-console.log(p)
+// // 15
+// const products = [
+//     { product: 'banana', price: 3 },
+//     { product: 'mango', price: 6 },
+//     { product: 'potato', price: ' ' },
+//     { product: 'avocado', price: 8 },
+//     { product: 'coffee', price: 10 },
+//     { product: 'tea', price: '' },
+// ]
+// const p = products.filter(o => o.price)
+// console.log(p)
 
-// 23
-const a = countries.find(l => l.length == 6)
-console.log(a);
+// // 23
+// const a = countries.find(l => l.length == 6)
+// console.log(a);

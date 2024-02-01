@@ -1065,12 +1065,12 @@ while (i < countries.length) {
 // }console.log(m)
 
 // 8
-let two = []
-for (let i = 0; i < countries.length; i++) {
-    if (countries[i].length <= 5) {
-        two.push(countries[i])
-    }
-}console.log(two)
+// let two = []
+// for (let i = 0; i < countries.length; i++) {
+//     if (countries[i].length <= 5) {
+//         two.push(countries[i])
+//     }
+// }console.log(two)
 
 // // 9
 // let upper = []

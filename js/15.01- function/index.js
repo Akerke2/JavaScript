@@ -11,7 +11,7 @@
 // sum();
 // функция шақырмайынША ІСТЕМЕЙДӘ
 
-// function sumtract() {
+// function subtract() {
 //     console.log(7-2)
 // }
 // sumtract();
@@ -57,12 +57,12 @@
 
 // function even(num1) {
 //     if (num1 % 2 === 0){
-//         console.log("even")
+//         return "even"   
 // }   else{
-//     console.log("odd")
+//     return "odd"
 // }
 // }
-// even(2)
+// console.log(even(5))
 
 
 // function odd(num1) {
@@ -120,7 +120,7 @@
 // 5
 // function perimeterOfRectangle(lenght, width) {
 //     console.log(2 * (lenght + width))
-// }
+// }    
 // perimeterOfRectangle(2, 2)
 
 // // 6
@@ -168,31 +168,31 @@
 // }
 // convertCelsiusToFahrenheit(5)
 
-// 13
+// // 13
 // function bmi (weightInKg, height) {
 //     u = weightInKg / (height * height)
 //     if (u < 18.5) {
-//         console.log(`Underweight: BMI is less ${u}`)
+//         return (`Underweight: BMI is less ${u}`)
 //     }
 //     n =  weightInKg / (height * height)
-//     (n < 24.9) {
-//         console.log(`Normal weight: BMI is ${n} to 24.9`)
+//     else if(n < 24.9) {
+//         return (`Normal weight: BMI is ${n} to 24.9`)
 //     }
 //     o = weightInKg / (height * height)
 //     if (o < 29.9) {
-//         console.log(`Overweight: BMI is ${o}`)
+//         return (`Overweight: BMI is ${o}`)
 //     }
 //     b = weightInKg / (height * height)
-//     if (b < 30) {
-//         console.log(`Obese: BMI is ${b} or more`)
+//     else if(b < 30) {
+//         return (`Obese: BMI is ${b} or more`)
 //     }
 // }
-// bmi(99, 29)
+// console.log(bmi(99, 29))
 
 // function sum(num1, num2) {
 //     return num1 + num2;
 // }
-// sum(60, 40) // 100 осылай жазу 100 деп жаза салғанмаен тең
+// sum(60, 40) // 100 осылай жазу 100 деп жаза салғанмаен Тең
 // console.log(sum(60, 40))
 
 // function multiply(num1, num2) {
@@ -323,7 +323,7 @@
 
 
 // 17.01.24
-// периметр табу 3 бұрыштың
+// периметр табу 3 бұрыштың  ЕГер кабыргасы бирДЕЙ БОЛСА 1 ГАНА ПАРАМЕТРАЛАМЫЗ егЕР Б3РДЕ БОЛМАСА ПО УСМАТРЕНИЮ  
 // function p (num1) {
 //     return num1 + num1 + num1;
 // }
@@ -334,7 +334,7 @@
 //     if (num2 % 2 == 1) {
 //         return num2 * 2
 //     }else{
-//         return num2 * 0
+//         return 0
 //     }
 // }
 // console.log(even(5))
@@ -408,7 +408,7 @@
 // console.log(capiTalizeArray(text))
 
 // // 2
-// ex
+// // ex
 // let additem = function(item) {
 //     let newitem = []
 //     newitem.push(item)
@@ -431,7 +431,6 @@
 //     text.splice(index, 1);
 //     return text
 // }
-
 // let fruits = ["apple", "orange", "mango"]
 // let indexo = 1
 
@@ -442,8 +441,257 @@
 // let removeItem = (index, text) => {
 //     text.splice(index, 2)
 //     return text
-// }
+// }                                       
 // let fruts = ["mango", "papais", "banana"]
 // let indexo = 2
 // let j = removeItem(indexo, fruts)
 // console.log(j)
+
+
+// 08.01.24
+
+// let j = (num1, num2) => {
+//     return num1 + num2
+// }
+// console.log(j(5,6))
+
+
+// let sum = (num1, num2, num3, num4) => { // 4 san kosu ushun
+//     return num1 + num2 + num3 + num4
+// }
+// console.log(sum(5, 5, 5, 5))
+
+
+// let sums = function(num1, num2, num3) { //expresion
+//     return num1 + num2 + num3
+// }
+// console.log(sums(5, 5, 5))
+
+// const sum = (...nums) => { // қанша параметр аргумент жазғымыз келеді сонша жазамыз
+//     let sum1 = 0
+//     for (let i = 0; i < nums.length; i++) {
+//         sum1 += nums[i]
+//     }
+//     return sum1
+// }
+// console.log(sum(5,6))
+
+
+// "for of" ONLY MASSIV 
+
+// let capitalize = (...ca) => {
+//     let capitals = []
+//     for (let i of ca) {
+//         capitals.push(i)
+//     }
+//     return capitals
+// }
+// console.log(capitalize("Almaty", "Astana", "Shumkent"))
+
+
+let capitalize = (...cap) => {
+    for(let i = 0; i < cap.length; i++){
+        cap[i] = cap[i].charAt(0).toLocaleUpperCase() + cap[i].slice(1)
+    }
+    return cap
+}
+console.log(capitalize("Almaty", "Astana", "Shumkent"))
+
+
+// capitalize("Almaty", "Astana", "Shumkent")
+
+
+// САНДАРДЫҢ ОРТАША МӘНІ
+
+// let average = (...nums) => {
+//     let sum = 0
+//     for (let i = 0; i < nums.length; i++) {
+//         sum += nums[i]
+//     }
+//     return sum / nums.length
+// }
+// console.log(average(6, 2))
+
+
+// let max = (...num) => {
+//     let o = num[0]
+//     for (let i = 1; i < num.length; i++) {
+//         if (o < num[i]) {
+//             o = num[i]
+//         }
+//         else if (num == 0) {
+//             return -1
+//         }
+//     }
+//     return o
+// }
+// console.log(max(54, 58, 562, 4))
+
+
+// дефолтный аргумент 
+// function grte(firstName, lastName = "messi")
+// console.log(grte("kilian"))
+
+// ЕСЛИ 2 ЗАНАЧЕНИЕ ЕНГІЗУ КЕРЕК БОЛСА ТЕК 1 ҒАНА ЗНАЧЕНИ ЕҢГІЗСЕ 
+
+// let sum = (num1, num2 = 0) => { // егер тек 1 элемент еңгізсек сол элементтің өзі шығады
+//     return num1 + num2
+// }
+// console.log(sum(5))
+
+// let city = (names, cit = "Almaty") => {
+//     return `i am ${names}, i live in ${cit}`
+// }
+// console.log(city("Akerke"))
+
+
+// Максимальный санды шығарады
+// let max = (...num) => {
+//     let nol = num[0]
+//     for (let i = 1; i < num.length; i++) {
+//         if (nol < num[i]) {
+//             nol = num[i]
+//         } else if (nol == 0) {
+//             nol = -1
+//         }
+//         return nol
+//     }
+// }
+// console.log(max(45, 748, 19))
+
+
+// // // РАБОТА С ТЕКСТАМ
+// let  j = (name, lastname = "Adikykyzy") => {
+//     return `I "m ${name} ${lastname}`
+// }
+// console.log(j(`Akerke`))
+
+
+
+// ПОДГОТОВКА К ТЕСТТУ
+
+// let nums = (num1, num2) => {
+//     return (num1 + num2) * 3
+// }
+// console.log(nums(2, 2))
+
+// // 2
+// let fulname = (fname, lname) => {
+//     return `Hello ${lname} ${fname} `
+// }
+// console.log(fulname("Akerke", "Adikyzy"))
+
+// // 3
+// let numbers = (...num) => {
+//     let m = 0
+//     for (let i = 0; i < num.length; i++) {
+//         if (num[i] % 2 == 0) {
+//             m += num[i]
+//         }
+//     }
+//     return m
+// }
+// console.log(numbers(15, 16, 12, 2))
+
+// // 4
+// let start = (massiv) => {
+//     let m = []
+//     for (let i of massiv) {
+//         if (i.startsWith('H')) {
+//             m.push(i);
+//         }
+//     } 
+//     return m;
+// }
+// console.log(start(['apple', 'Home', 'work'])) //КОНСОЛЬҒА МАСИВПЕН ЖАЗУДЫ ҰМЫТАЙМЫЗ!!!
+
+// // 5
+// let logo = (logicol) => {
+//     let m = []
+//     for (let i of logicol) {
+//         if (i == true) {
+//             m.push(1)
+//         } else{
+//             m.push(0)
+//         }
+//     } return m 
+// }
+// console.log(logo([true, false, undefined, null, true]))
+
+// // 6
+// let d = (name, country = `Kazakhstan`) => {
+//     return `Hello i'm ${name} and i live in ${country}`
+// }
+// console.log(d("Akerke"))
+
+// // 7
+// let f = (...string) => {
+//     focus = string.join(" ")
+//     return focus
+// }
+// console.log(f("smsmm", "smsms", "ldl"))
+
+
+
+
+
+// let sum = (num1, num2) => {
+//     return (num1 + num2) * 3
+// }
+// console.log(sum(5, 5))
+
+// // 2
+// let fullName = (sname, name) => {
+//     return `Hello ${sname} ${name}`
+// }
+// console.log(fullName("Adikyzy", "Akerke"))
+
+// // 3
+// let even = (...nums) => {
+//     let massiv = 0
+//     for (let i = 0; i < nums.length; i++) {
+//         if (nums[i] % 2 == 0){
+//             massiv += nums[i]
+//         }
+//     } return massiv
+// }
+// console.log(even(5, 2, 8))
+
+// // 4
+// let st = (str) => {
+//     let m = []
+//     for (let i of str) {
+//         if (i.startsWith('H')) {
+//             m.push(i)
+//         }
+//     } return m 
+// }
+// console.log(st(["Home", "Alone", "Harry"]))
+
+// // 5
+// let tr = (bol) => {
+//     let mas = []
+//     for (let i = 0; i < bol.length; i++) {
+//         if (bol[i] == true) {
+//             mas.push(1)
+//         } else {
+//             mas.push(0)
+//         }
+//     } return mas
+// }
+// console.log(tr([true, false, undefined, true]))
+
+// // 6
+// let dan = (name, country = "Kazakhstan") => {
+//     return `Hello i' m ${name} and i live in ${country}`
+// }
+// console.log(dan("Akerke"))
+
+// // 7
+// let fn = (...string) => {
+//     let vs = string.join(" ")
+//     return vs
+// }
+// console.log(fn("apple", "orange", "meet"))
+
+start

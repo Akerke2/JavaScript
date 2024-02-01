@@ -92,15 +92,15 @@
 
 
 // МЕТОДТАР
-let weekdays = ["Monday", "tuesday", "wednesday", "thusday", "Friday", "Saturday", "sunday"]
-// console.log(weekdays.indexOf("Monday")) // monday деген сөз бар болса индексін жоқ болса -1 қайтарады
+// let weekdays = ["Monday", "tuesday", "wednesday", "thusday", "Friday", "Saturday", "sunday"]
+// // console.log(weekdays.indexOf("Monday")) // monday деген сөз бар болса индексін жоқ болса -1 қайтарады
 
-let day = "wednesday" 
-if (weekdays.indexOf(day) >= 0) {               
-    console.log("day is present")
-} else {
-    console.log("no such day")
-}
+// let day = "wednesday" 
+// if (weekdays.indexOf(day) >= 0) {               
+//     console.log("day is present")
+// } else {
+//     console.log("no such day")
+// }
 
 // console.log(weekdays.lastIndexOf("Tuesday")) //соңғы элементты біз іздеген
 
@@ -135,7 +135,7 @@ if (weekdays.indexOf(day) >= 0) {
 // console.log(mixedDataTypes.length)
 
 // // 6
-// itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
 
 // // 7
 // console.log(itCompanies)
@@ -169,11 +169,11 @@ if (weekdays.indexOf(day) >= 0) {
 // console.log(`${itCompanies} are big IT companies.`)
 
 // // 13
-// if (itCompanies.indexOf(user)>=0){
-//     console.log("yes")}
-// else{
-//     console.log("No")
-// }
+if (itCompanies.indexOf(user)>=0){
+    console.log("yes")}
+else{
+    console.log("No")
+}
 
 
 
@@ -190,11 +190,19 @@ if (weekdays.indexOf(day) >= 0) {
 
 // push () жаңа элемент қосу үшін пуш соңына қосады
 
-// pop() - ең соңғы элементті удалить етеді
+// pop() - ең соңғы элементті удалить етіп, шығарады
+let o = [`mddmd`, `jddjdj`, `kdkd`]
+console.log(o.pop())
 
-// shift() ең басынан бір элемент удалить етеді
+// shift() ең басынан бір элемент удалить етіп, шығарады консольға
+let k = [`mddmd`, `jddjdj`, `kdkd`]
+console.log(k.shift())
+
+
 
 // unshift() - ең алдына бір элемент қосады
+let p = [`mddmd`, `jddjdj`, `kdkd`]
+console.log(p.unshift(5))
 
 
 // БАРЛЫҚ МЕТОДТАР ЖАҢА СТРИНГ ҚАЙТАРАДЫ ЕШҚАЙСЫСЫ ӨЗГЕРМЕЙДІ ТЕК МАСИВТЫҢ КОРИЯСЫН ӨЗГЕРТЕДІ
