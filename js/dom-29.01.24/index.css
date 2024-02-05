@@ -142,119 +142,119 @@ header button {
     transform: scale(0.75);
 }
 
-/* 2 section */
-.section2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 150px;
-}
-.section2 h3{
-    display: flex;
-    justify-content: left;
-
-}
-
-
-
-.section2 p{ 
-    font-size: 24px;
-}
-/* 
-.section2-img {
-    height: 60px;
-    width: 300px;
-    
-} */
-
-.product_cards {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-
-.section2 {
+.section-two{
+    margin: 50px 200px;
     display: flex;
     flex-direction: column;
 
 }
-
-.section2-text-container {
-    font-size: 24px;
-}
-
-.section2-cards-img {
+.section-two_images_texts{
     display: flex;
-    flex-wrap: wrap;
-    width: 200px;
-    height: 120px;
-    border-radius: 85px;
-
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
 }
-
-.section2-card-parents {
+.section-two_cards{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
-}
-
-.section2-cards {    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.section2-cards p {
-    font-size: 14px;
-}
-
-
-/* .product-cards {  slila u kogo to
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    margin: 0px 350px;
-}
-
-.product-text {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 50px 0px 10px;
-}
-
-.rating {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    gap: 10px;
-}
-
-.product-cards-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    gap: 25px;
     width: 100%;
-    gap: 30px;
+}
+.section-two_card{
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    width: 250px;
+    height: 200px;
+}
+.section-two_card_img{
+    width: 100%;
+    height: 70%;
+    background-image: url(img/9d4c128096139dd00ebaf2e09af5c630333497e0fa861a1ad0bb69d981697c48.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+.section-two_card_texts{
+    margin: 0;
+    padding: 0;
+}
+.section-two_card_texts h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-weight: 900;
+    
+}
+.section-two_card_texts p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-size: 17px;
 }
 
-.product-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-radius: 50px;
-    width: 360px;
-    height: 300px;
-    gap: 10px;
-} */
+.section-two_card_img1{
+    width: 100%;
+    height: 70%;
+    background-image: url(img/1b83179e9b3d0e87b2bcd473e8b42f617f8607ef5f12e2a7a044d506e70aa076.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
 
-.img {
+.section-two_card_img2{
+    width: 100%;
+    height: 70%;
+    background-image: url(img//13f9c3a9d078f55ec50eef46067dfc8c2fdc75a6b9ee3cf9cc385d8ee21a32ca.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.section-two_card_img3{
+    width: 100%;
+    height: 70%;
+    background-image: url(img/d4648d512c4a987f61349dc7f086328f332ef6a719b63bde68f83512ad923aef.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.section-two_card_img4{
+    width: 100%;
+    height: 70%;
+    background-image: url(img/ab06a44ae442c05ff2ed59e2b1b9bbe492c5499a826e8787a8535971eadac6b2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.section-two_card_img5{
+    width: 100%;
+    height: 70%;
+    background-image: url(img/267157c8141ecebc7316ae9b146c2e4c01d055bd7202fcc058630beda6972da5.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.section-two_card_img6{
+    width: 100%;
+    height: 70%;
+    background-image: url(img/e4162688396f7915ec6a5d5888d2db650b4e5aca0ebdb00c77d0940d37f74438.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.section-two_card_img7{
+    width: 100%;
+    height: 70%;
+    background-image: url(img/50b0efb192619699c322276512203f519d994877da764c1053f691a8ffd407a3.jpg);
+    background-size: cover;
+    background-position: center;
     border-radius: 15px;
 }
