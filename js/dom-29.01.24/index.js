@@ -185,18 +185,108 @@
 
 
 // Generate numbers and append to the container
-for (let i = 1; i <= 100; i++) {
-    let dives = document.createElement('div');
-    dives.textContent = i;
-    dives.classList.add('number');
+// for (let i = 1; i <= 100; i++) {
+//     let dives = document.createElement('div');
+//     dives.textContent = i;
+//     dives.classList.add('number');
 
 
-    if (i % 2 === 0) {
-        dives[i].style.backgraund == "green";
-    } else {
-        dives[i].style.backgraund == "yellow";
-    }
+//     if (i % 2 === 0) {
+//         dives[i].style.backgraund == "green";
+//     } else {
+//         dives[i].style.backgraund == "yellow";
+//     }
 
-    // Append the number div to the container
-    container.appendChild(dives);
-}
+//     // Append the number div to the container
+//     container.appendChild(dives);
+// }
+
+
+
+// 05,02,24
+// const headerButton = document.querySelector(`#id-button`)
+
+// headerButton.addEventListener("clik", () => {  // ИВЕНТ ОРЫНДАЛДҒАНДА ФУНКЦИЯ ШЫҒАРАДЫ
+//     console.log("button cliked") // МЫНА ЖЕРГЕ НЕ ЖАЗАМЫЗ СОНЫ ШЫҒАРАДЫ ӨЗГЕРТЕДІ КЛИК АПАРҒАНДА
+// })
+
+// // клик деген басқан кезде ӨЗГЕРЕДІ 
+
+
+
+
+// headerButton.addEventListener("mouseenter", () => {
+//   headerButton.style.color = "Yellow"
+
+// })
+// // МЫШКА БАРҒАН КЕЗДЕ ӨЗГЕРЕДІ
+
+// // ОСЫ ЕКІ ТАПСЫРМА БІР-БІРІНЕ БАЙЛАНЫСТЫ
+
+// headerButton.addEventListener("mouseleave", () => {
+//     headerButton.style.color = "white"
+// })   //МЫШКА КЕТКЕН  КЕЗДЕ ӨЗГЕРЕДІ ТҮС БЕРСЕК БОЛАДЫ 
+
+
+// КУЭРИ СЕЛЕКТР ИЕН АЛАМЫЗ ЭЛЕМЕНТ
+// ИВЕНТЛИСТНЕР АЛАМЫЗ АТЫН ҚОЯМЫЗ
+// ФУНКЦИЯ ЖАЗАМЫЗ
+// ИЗМЕНИНЯ КОСАМЫЗ 
+
+// const card = document.querySelectorAll(".category")
+// for (const img of card) {
+//     img.addEventListener("mouseenter", () => {
+//         img.style.transform = "scale(1.1)"
+//         img.style.borderBottom = "2px solid black"
+//     })
+
+//     img.addEventListener("mouseleave", () => {
+//         img.style.transform = "scale(1)"
+//         img.style.borderBottom = "none"
+//     })
+
+// }
+
+
+// const bootom = document.querySelector("#id-button")
+// bootom.addEventListener("mouseenter", () => { // МОУСИНТЕР  БОЛҒАНДА НЕ БОЛАДЫ СОНЫ ЖАЗАМЫЗ
+//     bootom.style.backgroundColor = "darkcyan"
+// })
+
+
+// bootom.addEventListener("mouseleave", () => {  //МОУСЛИВ БОЛСА НЕ БОЛАДЫ СОНЫ ЖАЗАМЫЗ
+//     bootom.style.backgroundColor = "rgb(0, 183, 183)"
+// })
+
+
+// const cafeCards = document.querySelectorAll(".section-two_card")
+// console.log(cafeCards);
+// for (const card of cafeCards) {
+//     card.addEventListener("mouseenter", () => {
+//         const imagediv = document.querySelector(".section-two_card div")
+//         imagediv.style.transform = "scale(1.1)"
+//     })
+
+//     card.addEventListener("mouseleave", () => {
+//         const imagediv = document.querySelector(".section-two_card div")
+//         imagediv.style.transform = "scale(1)"
+//     })
+
+
+// }
+
+
+// SAITTUN STYLE
+
+// const hover = document.querySelector("#id")
+// for (const o of hover) {
+//     o.addEventListener("mouseenter", () => {
+//         // const menus = document.querySelector(".menu-main a")
+//         hover.style.backgroundColor = "#FFC244FF"
+//     })
+
+//     o.addEventListener("mouseleave", () => {
+//         // const menus = document.querySelector(".menu-main a")
+//         hover.style.backgroundColor = "white"
+//     })
+// }

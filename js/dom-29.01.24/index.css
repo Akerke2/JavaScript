@@ -142,20 +142,22 @@ header button {
     transform: scale(0.75);
 }
 
-.section-two{
+.section-two {
     margin: 50px 200px;
     display: flex;
     flex-direction: column;
 
 }
-.section-two_images_texts{
+
+.section-two_images_texts {
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
     gap: 10px;
 }
-.section-two_cards{
+
+.section-two_cards {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -163,40 +165,47 @@ header button {
     gap: 25px;
     width: 100%;
 }
-.section-two_card{
+
+.section-two_card {
     display: flex;
     flex-direction: column;
     background: transparent;
     width: 250px;
     height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
 }
-.section-two_card_img{
+
+.section-two_card_img {
     width: 100%;
     height: 70%;
     background-image: url(https://images.deliveryhero.io/image/stores-glovo/stores/565d9076196a96580be3ed764aa85ea3b5937e5276357bbc9dd030a41f8c285b?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d);
     background-size: cover;
     background-position: center;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
-.section-two_card_texts{
+
+.section-two_card_texts {
     margin: 0;
     padding: 0;
 }
-.section-two_card_texts h1{
+
+.section-two_card_texts h1 {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 15px;
     font-weight: 900;
-    
+
 }
-.section-two_card_texts p{
+
+.section-two_card_texts p {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 15px;
     font-size: 17px;
 }
 
-.section-two_card_img1{
+.section-two_card_img1 {
     width: 100%;
     height: 70%;
     background-image: url(https://images.deliveryhero.io/image/stores-glovo/stores/50b0efb192619699c322276512203f519d994877da764c1053f691a8ffd407a3?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d);
@@ -205,7 +214,7 @@ header button {
     border-radius: 15px;
 }
 
-.section-two_card_img2{
+.section-two_card_img2 {
     width: 100%;
     height: 70%;
     background-image: url(https://images.deliveryhero.io/image/stores-glovo/stores/13f9c3a9d078f55ec50eef46067dfc8c2fdc75a6b9ee3cf9cc385d8ee21a32ca?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7Im1vZGUiOiJmaWxsIiwiYmciOiJ0cmFuc3BhcmVudCIsIndpZHRoIjo1ODgsImhlaWdodCI6MzIwfX1d);
@@ -214,17 +223,16 @@ header button {
     border-radius: 15px;
 }
 
-.section-two_card_img3{
+.section-two_card_img3 {
     width: 100%;
     height: 70%;
-    background-image: url(
-        https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBPPFFl1euqGUoRyUmdfugs5pNuUo_ZjhuTA&usqp=CAU);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBPPFFl1euqGUoRyUmdfugs5pNuUo_ZjhuTA&usqp=CAU);
     background-size: cover;
     background-position: center;
     border-radius: 15px;
 }
 
-.section-two_card_img4{
+.section-two_card_img4 {
     width: 100%;
     height: 70%;
     background-image: url(https://images.deliveryhero.io/image/stores-glovo/stores/ab06a44ae442c05ff2ed59e2b1b9bbe492c5499a826e8787a8535971eadac6b2?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d);
@@ -233,17 +241,16 @@ header button {
     border-radius: 15px;
 }
 
-.section-two_card_img5{
+.section-two_card_img5 {
     width: 100%;
     height: 70%;
-    background-image: url(
-        https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV8aysT_vzWApGCkxOFWPvY-IsZgartw8lAg&usqp=CAU);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV8aysT_vzWApGCkxOFWPvY-IsZgartw8lAg&usqp=CAU);
     background-size: cover;
     background-position: center;
     border-radius: 15px;
 }
 
-.section-two_card_img6{
+.section-two_card_img6 {
     width: 100%;
     height: 70%;
     background-image: url(https://images.deliveryhero.io/image/stores-glovo/stores/47eb6734c18126b6fa411a63c2701bb165d9dca4b08dfd5a13b9891a8baa766c?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d);
@@ -252,11 +259,140 @@ header button {
     border-radius: 15px;
 }
 
-.section-two_card_img7{
+.section-two_card_img7 {
     width: 100%;
     height: 70%;
     background-image: url(https://images.deliveryhero.io/image/stores-glovo/stores/50b0efb192619699c322276512203f519d994877da764c1053f691a8ffd407a3?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7ImhlaWdodCI6MjI1fX1d);
     background-size: cover;
     background-position: center;
     border-radius: 15px;
+}
+
+.list3 {
+    text-align: center;
+}
+
+.list3 p {
+    font-size: 44px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    background-color: #FFC244FF;
+    padding: 15px;
+
+}
+
+.men {
+    text-align: center;
+}
+
+.list4 img {
+    margin-top: 80px;
+}
+
+.list4 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.list4 p {
+    font-size: 44px;
+}
+
+
+/* cards */
+.card1 h5 {
+    /* text-align: left; */
+    font-size: 34px;
+}
+
+.card1 p {
+    font-size: 20px;
+
+}
+
+/* .card1 a {
+    text-decoration: none;
+
+} */
+
+.allcards {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.allcards a {
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 20px;
+    background-color: green;
+    padding: 10px 25px;
+    font-size: 25px;
+}
+
+.futer {
+    background-color: black;
+}
+
+.futer h5 {
+    color: aliceblue;
+    font-size: 24px;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.futer p {
+    color: aliceblue;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+
+.futer-cards {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-around; */
+}
+
+.brends {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.brends h5 {
+    color: aliceblue;
+    font-size: 24px;
+}
+
+.brends p {
+    /* display: flex; */
+    justify-content: left;
+    color: aliceblue;
+    margin-top: 85px;
+
+}
+
+.form-select select {
+    /* color: rgb(4, 3, 3); */
+    padding: 18px;
+
+}
+
+.form-select option {
+    /* color: rgb(250, 250, 250); */
+
+}
+
+.form-select form {
+    color: rgb(0, 0, 0);
 }
