@@ -1,6 +1,6 @@
 .lamoda_banner {
     display: flex;
-    gap: 10px;
+    gap: 40px;
     align-items: center;
     justify-content: center;
 }
@@ -9,12 +9,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
 
 }
 
 .lamoda-text {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
+
+/* 8 */
+
+/* .lamoda-product-menu {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.lamoda-l{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lamoda-product-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
