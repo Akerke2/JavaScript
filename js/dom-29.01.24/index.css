@@ -288,6 +288,10 @@ header button {
 .men {
     text-align: center;
 }
+.list4-bac {
+    background-color: aquamarine;
+    margin-top: 80px;
+}
 
 .list4 img {
     margin-top: 80px;
@@ -328,17 +332,19 @@ header button {
     align-items: center;
 }
 
+
 .allcards a {
     text-decoration: none;
     color: aliceblue;
     border-radius: 20px;
     background-color: green;
     padding: 10px 25px;
+    
     font-size: 25px;
 }
 
 .futer {
-    background-color: black;
+    background-color: rgb(30, 29, 29);
 }
 
 .futer h5 {
