@@ -1,3 +1,10 @@
+const url = window.location.href
+console.log(url);
+
+const id = url.split("id=")[1]
+console.log(id);
+
+
 const product = [{
     id: 1,
     name: "EA7",
@@ -59,22 +66,38 @@ const product = [{
 
 ];
 
-const brendsp = product.find(r => r.id == id)
-console.log(brendsp);
+// const brendsp = product.find(r => r.id == id)
+// console.log(brendsp);
 
-const namess = document.querySelectorAll(".text")
-namess.forEach(n => n.textContent = brendsp.name)
-console.log(namess);
+// const namess = document.querySelectorAll(".text")
+// namess.forEach(n => n.textContent = brendsp.name)
+// console.log(namess);
 
-const img = document.querySelectorAll(".profil_photo")
-img.forEach(src => src.src = `${brendsp.imageUrl}`)
-console.log(img);
+// const img = document.querySelectorAll(".profil_photo")
+// img.forEach(src => src.src = `${brendsp.imageUrl}`)
+// console.log(img);
 
-const clotype = document.querySelectorAll("#profil_photo_text_a")
-clotype.forEach(m => m.textContent = `${brendsp.clotype}`)
-console.log(clotype);
+// const clotype = document.querySelectorAll("#profil_photo_text_a")
+// clotype.forEach(m => m.textContent = `${brendsp.clotype}`)
+// console.log(clotype);
 
-const price = document.querySelectorAll("#profil_photo_text_h3")
-price.src = brendsp.price
-console.log(price);
+// const price = document.querySelectorAll("#profil_photo_text_h3")
+// price.src = brendsp.price
+// console.log(price);
 
+
+
+let main = product.find(moda => moda.id == id)
+console.log(main)
+
+let img = document.querySelectorAll('.profil_photo')
+img.forEach(images => images.src = main.imageUrl)
+
+let h1 = document.querySelector('.text')
+h1.forEach(o => o.textContent = main.name)
+
+let p = document.querySelector('#profil_photo_text_a')
+p.forEach(p => p.textContent = main.clotype)
+
+let price = document.querySelector('#profil_photo_text_h3')
+price.forEach(i => i.textContent = main.price)
