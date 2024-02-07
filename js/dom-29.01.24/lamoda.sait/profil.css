@@ -1,0 +1,44 @@
+.profil_section {
+    display: flex;
+    flex-direction: row;
+}
+.profil_photo {
+   gap: 40px;
+   display: flex;
+   justify-content: left;
+   padding: 90px;
+}
+
+.profil_photo_text {
+
+}
+
+.profil_photo_select {
+    display: flex;
+    padding: 10px 10px;
+}
+
+.profil_photo_text h3{
+    font-size: 22px;
+}
+
+.profil_photo_text p{
+    color: rgb(0, 0, 0);
+    border-radius: 50px 50px;
+}
+
+.profil_photo_a {
+    color: black;
+}
+.button {
+    color: aliceblue;
+    padding: 15px 55px;
+    background-color: black;
+    text-decoration: none;
+}
+
+.profil_section_alltext {
+    padding: 90px 1px;
+
+}
+

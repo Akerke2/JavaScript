@@ -147,40 +147,110 @@ const moda = [
 
 
 
-function generateProductMenu(rest) {
-    const containerDiv = document.createElement('div');
-    const productMenuDiv = document.createElement('div');
-    const productImgDiv = document.createElement('div');
-    const productImg = document.createElement('img');
-    const productTextDiv = document.createElement('div');
-    const priceParagraph = document.createElement('p');
-    const brandParagraph = document.createElement('p');
-    const descriptionParagraph = document.createElement('p');
+let cards = [
+    {
+        id: 1,
+        img: 'https://a.lmcdn.ru/img600x866/M/P/MP002XM0MVIH_12351054_1_v1_2x.jpg',
+        price: '160 850 ₸',
+        text_one: 'Winterra',
+        text: 'Куртка утепленная',
+    },
+    {
+        id: 2,
+        img: 'https://a.lmcdn.ru/img600x866/M/P/MP002XM0MYUB_19878812_1_v1.jpeg',
+        price: '14 250 ₸',
+        text_one: 'Finn Flare',
+        text: 'Олимпийка',
+    },
+    {
+        id: 3,
+        img: 'https://a.lmcdn.ru/img600x866/M/P/MP002XM256FI_21521300_1_v1_2x.jpg',
+        price: '141 070 ₸',
+        text_one: "Marc O'Pol",
+        text: 'Пуховик',
+    },
+    {
+        id: 4,
+        img: 'https://a.lmcdn.ru/img600x866/R/T/RTLACX556101_21521814_1_v1_2x.jpg',
+        price: '62 900 ₸',
+        text_one: "adidas",
+        text: 'Костюм спортивный',
+    },
+    {
+        id: 5,
+        img: 'https://a.lmcdn.ru/img600x866/M/P/MP002XM0V7IF_20626479_1_v1_2x.jpg',
+        price: '49 900 ₸',
+        text_one: "Vivaldi",
+        text: 'Пальто',
+    },
+    {
+        id: 6,
+        img: 'https://a.lmcdn.ru/img600x866/M/P/MP002XW171K8_20402833_1_v1.jpeg',
+        price: '8 950 ₸',
+        text_one: "Colin's",
+        text: 'Брюки',
+    },
+    {
+        id: 7,
+        img: 'https://a.lmcdn.ru/img600x866/M/P/MP002XM0SB6D_21287631_1_v1.jpeg',
+        price: '34 875 ₸',
+        text_one: "Finn Flare",
+        text: 'Пуховик',
+    },
+    {
+        id: 8,
+        img: 'https://a.lmcdn.ru/img600x866/R/T/RTLADD722701_21823405_1_v1_2x.jpg',
+        price: '55 700 ₸',
+        text_one: "Moaxsport",
+        text: 'Пуховик Igora light',
+    },
+]
 
-    containerDiv.appendChild(productMenuDiv);
-    productMenuDiv.appendChild(productImgDiv);
-    productImgDiv.appendChild(productImg);
-    productMenuDiv.appendChild(productTextDiv);
-    productTextDiv.appendChild(priceParagraph);
-    productTextDiv.appendChild(brandParagraph);
-    productTextDiv.appendChild(descriptionParagraph);
+function createCard(i) {
+    // Create div with class "card"
+    var cardDiv = document.createElement('div');
+    cardDiv.className = 'card';
 
-    containerDiv.classList.add('lamoda-product-menu');
-    productMenuDiv.classList.add('lamoda-product-menu');
-    productImgDiv.classList.add('lamoda-product-img');
+    // Create image element with src, alt, and height attributes
+    let img = document.createElement('img');
+    img.src = i.img;
+    img.style.height = '300px';
+    cardDiv.appendChild(img);
+    // Create div with class "card-text"
+    var textDiv = document.createElement('div');
+    textDiv.className = 'card-text';
 
-    productImg.src = rest.imageUrl;
-    productImg.alt = '';
-    priceParagraph.innerHTML = `${rest.name}`;
-    brandParagraph.textContent = `${rest.text_p}`;
-    descriptionParagraph.textContent = `${rest.text_s}`;
+    // Create heading element (h3) with text content
+    var heading = document.createElement('h3');
+    heading.textContent = i.price;
 
-    return containerDiv;
+    // Create paragraph elements (p) with text content
+    var paragraph1 = document.createElement('p');
+    paragraph1.textContent = i.text_one;
+
+    var paragraph2 = document.createElement('p');
+    paragraph2.textContent = i.text;
+
+    // Append heading and paragraphs to textDiv
+    textDiv.appendChild(heading);
+    textDiv.appendChild(paragraph1);
+    textDiv.appendChild(paragraph2);
+
+    // Append image and textDiv to cardDiv
+
+    cardDiv.appendChild(textDiv);
+    cardDiv.addEventListener("click", () => {
+        window.location.href = `profil.html?id=${i.id}`
+    })
+
+    return cardDiv; 
 }
 
-
-const con = document.querySelector(".lamoda-product-menu")
-for (const rest of moda) {
-    const card = generateProductMenu(rest)
+let con = document.querySelector(".card-card")
+for (let i of cards) {
+    let card = createCard(i)
     con.appendChild(card)
-}
+} 
+
+
+
