@@ -453,3 +453,36 @@ for (const rest of storeData) {
     container.appendChild(card)
 }
 
+
+//08.02.24
+// js тан ЭЛЕМЕНТ УДАЛИТЬ ЕТУ 
+
+// container.removeChild(container.firstElementChild)  // ФИРСТЭЛЕМЕНЧАЙЛД АРҚЫЛЫ 1 ШІ ЭЛЕМЕНТ УДАЛИТЬ ЕТЕМІЗ
+// container.removeChild(container.lastChild)    //ЛАСТЧАЙЛД ПОСЛЕДНИЙ ЭЛЕМЕНТ УДАЛИТЬ ЕТЕДІ
+
+// container.lastElementChild.style.borderBottom = "1px solid black"  // style tozhe auusturuga boladu
+// container.firstElementChild.style.borderBottom = "1px solid black"  // style tozhe auusturuga boladu
+
+
+
+// container.children[2].style.borderBottom = "1px solid black"
+// container.children[3].style.borderBottom = "1px solid black"
+
+
+
+
+
+// ӘРБІР ЭЛЕМЕНТКЕ БОРДЕРБОТТОМ ҚОСУ ҮШІН ФОР МЕН АЛАМЫЗ
+
+for (let i = 0; i < container.clientHeight; i++) {
+    container.children[i].style.borderBottom = "1px solid black"
+}
+// ӘРБІР ЭЛЕМЕНТКЕ БОРДЕРБОТТОМ ҚОСУ ҮШІН ФОР МЕН АЛАМЫЗ
+// БӘРӘНШІ КОНТАЙНЕР 
+// 2 ШІ ЧИЛДРЕННІҢ ӘРБІР ЭЛЕМЕНТІ
+// 3 ШІ СТАЙЛ
+// 4 ШІ ҚАНДАЙ СТАЙЛ БЕРЕМІЗ СОНЫҢ АТЫ 
+// СОЛ СТАЙЛДЫҢ НАСТРОЙКАЛАРЫ
+
+
+ 

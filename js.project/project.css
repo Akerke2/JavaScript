@@ -1,0 +1,110 @@
+header {
+    background-color: #212121;
+    /* Цвет фона */
+    color: #fff;
+    /* Цвет текста */
+    padding: 10px 0;
+    /* Внутренние отступы */
+    display: flex;
+    /* Установка flexbox для выравнивания элементов */
+    justify-content: space-between;
+    /* Равномерное распределение пространства между элементами */
+    align-items: center;
+    /* Выравнивание элементов по вертикали */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Тень */
+    position: fixed;
+    /* Фиксированное позиционирование */
+    top: 0;
+    /* Отступ от верха */
+    left: 0;
+    /* Отступ от левого края */
+    width: 100%;
+    /* Ширина равна ширине экрана */
+    z-index: 1000;
+    /* Значение z-index для обеспечения видимости над другими элементами */
+}
+
+.logo img {
+    /* width: 100px; */
+    /* Ширина логотипа */
+    height: 50px;
+    /* Автоматическое масштабирование высоты */
+}
+
+nav ul {
+    list-style: none;
+    /* Удаление маркера списка */
+    padding: 0;
+    /* Удаление внутренних отступов */
+}
+
+nav ul li {
+    display: inline;
+    /* Элементы списка в одну строку */
+    margin-right: 20px;
+    /* Внешний отступ между пунктами меню */
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* Удаление подчеркивания ссылок */
+    color: #fff;
+    /* Цвет текста */
+}
+
+.auth a {
+    text-decoration: none;
+    /* decorotion none bolu ushun */
+    color: #fff;
+    /* Цвет текста */
+    margin-left: 20px;
+    /* Внешний отступ между ссылками */
+}
+
+/* body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; 
+} */
+
+#bg-video source{
+    /* position: fixed; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 80%;
+    min-height: 80%; */
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+    /* margin-top: 50px; */
+}
+
+.bg_box{
+    backdrop-filter: blur(10px);
+}
+
+.content {
+    margin: -30px;
+    display: flex;
+    justify-content: center;
+}
+
+#cardContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardContainer_img {
+    width: 130px;
+    height: 180px;
+}
+
+.cardContainer_text {
+    /* display: flex;
+    justify-content: right;
+    text-align: right; */
+}

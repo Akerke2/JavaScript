@@ -13,12 +13,12 @@
 
 }
 
-.lamoda-text {
-
-
-}
 
 /* 8 */
+.oldprice {
+    text-decoration: line-through;
+}
+
 
 .card-card {
     /* margin-top: 50px; */
