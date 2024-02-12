@@ -21,7 +21,6 @@
 /* Общие стили для заголовка */
 header {
     display: flex;
-    background-color: black;
     flex-direction: row;
     background-color: #1c1c1e;
     /* Цвет фона */
@@ -33,15 +32,29 @@ header {
     /* Тень */
 }
 
-.container_nav {
+.logo img {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7px;
+}
+
+.container_nav ul{
+    display: flex;
+    justify-content: space-around;
     flex-direction: row;
     align-items: center;
 }
 
+.container_nav select{
+    background-color: #1c1c1e;
+    color: #fff;
+    border-radius: none;
+    border: none;
+}
 
-.container {
+
+.container ul{
     width: 1200px;
     /* Ширина контейнера */
     margin: 0 auto;
@@ -78,6 +91,10 @@ nav li a:hover {
 
 }
 
+#server_sign_eart{
+    margin: 15px;
+}
+
 #server_sign_play {
     padding: 10px;
     background-color: aqua;
@@ -91,3 +108,5 @@ nav li a:hover {
     border-radius: 5px;
     width: 75px;
 }
+
+/* 2 */
