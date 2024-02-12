@@ -359,65 +359,20 @@ const storeData = [
 
 
 
-// function createSectionTwoCard(rest) {
-//     // Create elements
-//     var cardDiv = document.createElement("div");
-//     cardDiv.classList.add("section-two_card");
-
-//     var imgDiv = document.createElement("div");
-//     imgDiv.classList.add("section-two_card_img"); 
-//     imgDiv.style.backgroundImage = `url(${rest.imageUrl})`
-
-
-//     var textsDiv = document.createElement("div");
-//     textsDiv.classList.add("section-two_card_texts");
-
-//     var heading = document.createElement("h1"); 
-//     heading.textContent = rest.name;
-
-//     var paragraph = document.createElement("p");
-//     var strongText = document.createElement("strong");
-//     strongText.textContent = `${rest.rating}`;
-//     var spanText = document.createElement("span");
-//     spanText.style.color = "gray";
-//     spanText.textContent = rest.reviews;
-
-//     // Construct the structure
-//     paragraph.appendChild(strongText);
-//     paragraph.appendChild(spanText);
-
-//     textsDiv.appendChild(heading);
-//     textsDiv.appendChild(paragraph);
-
-//     cardDiv.appendChild(imgDiv);
-//     cardDiv.appendChild(textsDiv);
-
-//     return cardDiv;
-// }
-
-
-// const container = document.querySelector(".section-two_cards")
-
-// for (const rest of storeData) {
-//     const card = createSectionTwoCard(rest)
-//     container.appendChild(card)
-// }
-
-
 function createSectionTwoCard(rest) {
     // Create elements
     var cardDiv = document.createElement("div");
     cardDiv.classList.add("section-two_card");
 
     var imgDiv = document.createElement("div");
-    imgDiv.classList.add("section-two_card_img");
+    imgDiv.classList.add("section-two_card_img"); 
     imgDiv.style.backgroundImage = `url(${rest.imageUrl})`
 
 
     var textsDiv = document.createElement("div");
     textsDiv.classList.add("section-two_card_texts");
 
-    var heading = document.createElement("h1");
+    var heading = document.createElement("h1"); 
     heading.textContent = rest.name;
 
     var paragraph = document.createElement("p");
@@ -437,11 +392,6 @@ function createSectionTwoCard(rest) {
     cardDiv.appendChild(imgDiv);
     cardDiv.appendChild(textsDiv);
 
-    cardDiv.addEventListener("click", () => {
-        window.location.href = `restaurant.html/salam.html?id=${rest.id}`
-    })
-
-
     return cardDiv;
 }
 
@@ -452,6 +402,56 @@ for (const rest of storeData) {
     const card = createSectionTwoCard(rest)
     container.appendChild(card)
 }
+
+
+// function createSectionTwoCard(rest) {
+//     // Create elements
+//     var cardDiv = document.createElement("div");
+//     cardDiv.classList.add("section-two_card");
+
+//     var imgDiv = document.createElement("div");
+//     imgDiv.classList.add("section-two_card_img");
+//     imgDiv.style.backgroundImage = `url(${rest.imageUrl})`
+
+
+//     var textsDiv = document.createElement("div");
+//     textsDiv.classList.add("section-two_card_texts");
+
+//     var heading = document.createElement("h1");
+//     heading.textContent = rest.name;
+
+//     var paragraph = document.createElement("p");
+//     var strongText = document.createElement("strong");
+//     strongText.textContent = `${rest.rating}`;
+//     var spanText = document.createElement("span");
+//     spanText.style.color = "gray";
+//     spanText.textContent = rest.reviews;
+
+//     // Construct the structure
+//     paragraph.appendChild(strongText);
+//     paragraph.appendChild(spanText);
+
+//     textsDiv.appendChild(heading);
+//     textsDiv.appendChild(paragraph);
+
+//     cardDiv.appendChild(imgDiv);
+//     cardDiv.appendChild(textsDiv);
+
+//     cardDiv.addEventListener("click", () => {
+//         window.location.href = `restaurant.html/salam.html?id=${rest.id}`
+//     })
+
+
+//     return cardDiv;
+// }
+
+
+// const container = document.querySelector(".section-two_cards")
+
+// for (const rest of storeData) {
+//     const card = createSectionTwoCard(rest)
+//     container.appendChild(card)
+// }
 
 
 //08.02.24
@@ -472,11 +472,11 @@ for (const rest of storeData) {
 
 
 
-// ӘРБІР ЭЛЕМЕНТКЕ БОРДЕРБОТТОМ ҚОСУ ҮШІН ФОР МЕН АЛАМЫЗ
+// // ӘРБІР ЭЛЕМЕНТКЕ БОРДЕРБОТТОМ ҚОСУ ҮШІН ФОР МЕН АЛАМЫЗ
 
-for (let i = 0; i < container.clientHeight; i++) {
-    container.children[i].style.borderBottom = "1px solid black"
-}
+// for (let i = 0; i < container.clientHeight; i++) {
+//     container.children[i].style.borderBottom = "1px solid black"
+// }
 // ӘРБІР ЭЛЕМЕНТКЕ БОРДЕРБОТТОМ ҚОСУ ҮШІН ФОР МЕН АЛАМЫЗ
 // БӘРӘНШІ КОНТАЙНЕР 
 // 2 ШІ ЧИЛДРЕННІҢ ӘРБІР ЭЛЕМЕНТІ
@@ -485,4 +485,161 @@ for (let i = 0; i < container.clientHeight; i++) {
 // СОЛ СТАЙЛДЫҢ НАСТРОЙКАЛАРЫ
 
 
- 
+
+// function createSectionTwoCard(i) {
+//     // Create main div element with class 'section-two_card'
+//     var cardDiv = document.createElement("div");
+//     cardDiv.classList.add("section-two_card");
+
+//     // Create div for image with classes 'section-two_card_img' and 'section-two_img'
+//     var imgDiv = document.createElement("div");
+//     imgDiv.classList.add("section-two_card_img", "section-two_img");
+
+//     cardDiv.style.position = 'relative'
+
+//     // Create image element with src attribute and class 'section-two_ioimg'
+//     var img = document.createElement("img");
+//     img.src = i.imageUrl;
+//     img.alt = "";
+//     img.style.transition = 'transform 0.5s ease'
+//     img.addEventListener('mouseenter', () => {
+//         img.style.transform = 'scale(1.1)'
+//     })
+//     img.addEventListener('mouseleave', () => {
+//         img.style.transform = 'scale(1.0)'
+//     })
+//     img.classList.add("section-two_ioimg");
+
+
+//     // Append image to anchor element, anchor element to image div
+
+//     imgDiv.appendChild(img);
+
+//     // Create div for texts with class 'section-two_card_texts'
+//     var textDiv = document.createElement("div");
+//     textDiv.classList.add("section-two_card_texts");
+
+//     // Create heading element
+//     var heading = document.createElement("h1");
+//     heading.textContent = i.name;
+
+//     // Create div for text content with class 'section-two_card_texts-text'
+//     var textContentDiv = document.createElement("div");
+//     textContentDiv.classList.add("section-two_card_texts-text");
+
+//     // Create image element for rating
+//     var ratingImg = document.createElement("img");
+//     ratingImg.src = "https://images.deliveryhero.io/image/customer-assets-glovo/store_ratings/rating_excellent.png?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo0MCwiaGVpZ2h0Ijo0MH19XQ==";
+//     ratingImg.alt = "";
+//     ratingImg.style.height = "20px";
+
+//     // Create paragraph element for rating text
+//     var ratingText = document.createElement("p");
+//     ratingText.innerHTML = `<strong>${i.rating}% </strong><span style='color: gray;'>(${i.reviews}+)</span>`;
+
+//     // Append rating elements to text content div
+//     textContentDiv.appendChild(ratingImg);
+//     textContentDiv.appendChild(ratingText);
+
+//     if (i.free) {
+//         let freee = document.createElement('p')
+//         freee.style.display = 'flex'
+//         freee.style.alignItems = 'center'
+//         freee.style.backgroundColor = '#FFB928FF'
+//         freee.style.padding = '0 20px 0px 10px'
+//         freee.style.borderRadius = '5px'
+//         let freeespan = document.createElement('span')
+//         let freeeimg = document.createElement('img')
+//         freeeimg.src = 'https://images.deliveryhero.io/image/customer-assets-glovo/filters/sorting/delivery_fee_light.svg?t=W3sicmVzaXplIjp7IndpZHRoIjo0MCwiaGVpZ2h0Ijo0MH19LHsic3ZnIjp7InEiOiJsb3cifX1d'
+//         freeeimg.style.height = '20px'
+//         freeeimg.style.marginRight = '5px'
+//         freeespan.textContent = 'Free'
+
+//         freee.appendChild(freeeimg)
+//         freee.appendChild(freeespan)
+//         textContentDiv.appendChild(freee)
+//     }
+//     // Append heading and text content div to text div
+//     textDiv.appendChild(heading);
+//     textDiv.appendChild(textContentDiv);
+
+//     // Append image div and text div to main card div
+//     cardDiv.appendChild(imgDiv);
+//     cardDiv.appendChild(textDiv);
+
+//     if (i.skidka) {
+//         let divsk = document.createElement('div')
+//         divsk.textContent = `${ i.skidka }%`
+//             divsk.classList.add('div-sk')
+
+//         cardDiv.appendChild(divsk)
+//     }
+
+//     cardDiv.addEventListener('click', () => {
+//         window.location.href = `salam.html?id =${ i.id}`
+//     })
+//     // Return the main card div
+//     return cardDiv;
+// }
+// let c = document.querySelector('.section-two_cards')
+
+// for (let rest of storeData) {
+//     let card = createSectionTwoCard(rest)
+//     c.appendChild(card)
+// }
+
+
+
+
+// var ratingImg = document.createElement("img");
+// ratingImg.src = "https://images.deliveryhero.io/image/customer-assets-glovo/store_ratings/rating_excellent.png?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo0MCwiaGVpZ2h0Ijo0MH19XQ==";
+// ratingImg.alt = "";
+// ratingImg.style.height = "20px";
+
+// // Create paragraph element for rating text
+// var ratingText = document.createElement("p");
+// ratingText.innerHTML = `<strong>${i.rating}% </strong><span style='color: gray;'>(${i.reviews}+)</span>`;
+
+// // Append rating elements to text content div
+// textContentDiv.appendChild(ratingImg);
+// textContentDiv.appendChild(ratingText);
+
+// if (i.free) {
+//     let freee = document.createElement('p')
+//     freee.style.display = 'flex'
+//     freee.style.alignItems = 'center'
+//     freee.style.backgroundColor = '#FFB928FF'
+//     freee.style.padding = '0 20px 0px 10px'
+//     freee.style.borderRadius = '5px'
+//     let freeespan = document.createElement('span')
+//     let freeeimg = document.createElement('img')
+//     freeeimg.src = 'https://images.deliveryhero.io/image/customer-assets-glovo/filters/sorting/delivery_fee_light.svg?t=W3sicmVzaXplIjp7IndpZHRoIjo0MCwiaGVpZ2h0Ijo0MH19LHsic3ZnIjp7InEiOiJsb3cifX1d'
+//     freeeimg.style.height = '20px'
+//     freeeimg.style.marginRight = '5px'
+//     freeespan.textContent = 'Free'
+
+//     freee.appendChild(freeeimg)
+//     freee.appendChild(freeespan)
+//     textContentDiv.appendChild(freee)
+// }
+// // Append heading and text content div to text div
+// textDiv.appendChild(heading);
+// textDiv.appendChild(textContentDiv);
+
+// // Append image div and text div to main card div
+// cardDiv.appendChild(imgDiv);
+// cardDiv.appendChild(textDiv);
+
+// if (i.skidka) {
+//     let divsk = document.createElement('div')
+//     divsk.textContent = `${ i.skidka }%`
+//         divsk.classList.add('div-sk')
+
+//     cardDiv.appendChild(divsk)
+// }
+
+// cardDiv.addEventListener('click', () => {
+//     window.location.href = `salam.html ? id = ${ i.id }`
+// })
+// // Return the main card div
+// return cardDiv;

@@ -224,6 +224,23 @@ const product = [
     }
 ];
 
+// let ids = product.find(moda => moda.id == id)
+// console.log(ids);
+
+// let img = document.querySelectorAll(".profil_photo_select")
+// forEach.img(imgs => imgs.src = ids.img)
+
+// let price = document.querySelector(".section-div2-price")
+// price.textContent = ids.brand
+
+// let oldPrice = document.querySelector(".section-div2-text2")
+// oldPrice.textContent = ids.oldPrice
+
+
+
+
+
+
 
 
 

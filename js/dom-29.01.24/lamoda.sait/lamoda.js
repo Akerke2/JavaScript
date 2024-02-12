@@ -335,6 +335,75 @@ for (let i of cards) {
 
 
 
+// function createLamodaBanner(i) {
+//     // Create the main div with class "lamoda_banner"
+//     var lamodaBannerDiv = document.createElement("div");
+//     lamodaBannerDiv.classList.add("lamoda_banner");
+
+//     // Create the inner div with class "lamoda-card"
+//     var lamodaCardDiv = document.createElement("div");
+//     lamodaCardDiv.classList.add("lamoda-card");
+
+//     // Create the div for the image with class "lamoda-img"
+//     var lamodaImgDiv = document.createElement("div");
+//     lamodaImgDiv.classList.add("lamoda-img");
+
+//     // Create the image element
+//     var img = document.createElement("img");
+//     img.src = i.img;
+//     img.width = "350";
+//     img.height = "350";
+
+//     // Append the image to the "lamoda-img" div
+//     lamodaImgDiv.appendChild(img);
+
+//     // Create the div for text with class "lamoda-text"
+//     var lamodaTextDiv = document.createElement("div");
+//     lamodaTextDiv.classList.add(i.price);
+
+//     // Create the heading element
+//     var heading = document.createElement("h3");
+//     heading.textContent = i.brand; // Text content in Russian
+
+//     // Create the paragraph element
+//     var paragraph = document.createElement("p");
+//     paragraph.textContent = i.category; // Text content in Russian
+
+//     // Append the heading and paragraph to the "lamoda-text" div
+//     lamodaTextDiv.appendChild(heading);
+//     lamodaTextDiv.appendChild(paragraph);
+
+//     // Append the "lamoda-img" div and "lamoda-text" div to the "lamoda-card" div
+//     lamodaCardDiv.appendChild(lamodaImgDiv);
+//     lamodaCardDiv.appendChild(lamodaTextDiv);
+
+//     // Append the "lamoda-card" div to the "lamoda_banner" div
+//     lamodaBannerDiv.appendChild(lamodaCardDiv);
+//     window.location.href = `profil.html/?id==${i.id}`
+
+//     // Return the created structure
+//     return lamodaBannerDiv;
+// }
+
+// // Example usage: Append the created structure to the body of the document
+// document.body.appendChild(createLamodaBanner());
+
+
+// let consantrition = document.querySelector(".card-card")
+
+// for (const opa of cards) {
+//     let j = createLamodaBanner[i]
+//     consantrition.appendChild(j)
+// }
+
+
+
+
+
+
+
+
+
 
 // // Создаем массив объектов с информацией о товарах и их старых и новых ценах
 // const oldPriceList = [

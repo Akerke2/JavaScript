@@ -1,110 +1,93 @@
+/* header {
+
+
+
+}
+
+.container {
+    display: flex;
+
+}
+
+.container_nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+ */
+
+
+/* Общие стили для заголовка */
 header {
-    background-color: #212121;
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    background-color: #1c1c1e;
     /* Цвет фона */
     color: #fff;
     /* Цвет текста */
-    padding: 10px 0;
-    /* Внутренние отступы */
-    display: flex;
-    /* Установка flexbox для выравнивания элементов */
-    justify-content: space-between;
-    /* Равномерное распределение пространства между элементами */
-    align-items: center;
-    /* Выравнивание элементов по вертикали */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    /* Отступы внутри */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* Тень */
-    position: fixed;
-    /* Фиксированное позиционирование */
-    top: 0;
-    /* Отступ от верха */
-    left: 0;
-    /* Отступ от левого края */
-    width: 100%;
-    /* Ширина равна ширине экрана */
-    z-index: 1000;
-    /* Значение z-index для обеспечения видимости над другими элементами */
 }
 
-.logo img {
-    /* width: 100px; */
-    /* Ширина логотипа */
-    height: 50px;
-    /* Автоматическое масштабирование высоты */
+.container_nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 }
 
+
+.container {
+    width: 1200px;
+    /* Ширина контейнера */
+    margin: 0 auto;
+    /* Выравнивание по центру */
+}
+
+/* Стили для навигационного меню */
 nav ul {
-    list-style: none;
-    /* Удаление маркера списка */
-    padding: 0;
-    /* Удаление внутренних отступов */
-}
-
-nav ul li {
-    display: inline;
-    /* Элементы списка в одну строку */
-    margin-right: 20px;
-    /* Внешний отступ между пунктами меню */
-}
-
-nav ul li a {
-    text-decoration: none;
-    /* Удаление подчеркивания ссылок */
-    color: #fff;
-    /* Цвет текста */
-}
-
-.auth a {
-    text-decoration: none;
-    /* decorotion none bolu ushun */
-    color: #fff;
-    /* Цвет текста */
-    margin-left: 20px;
-    /* Внешний отступ между ссылками */
-}
-
-/* body,
-html {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    height: 100%;
-    overflow: hidden; 
-} */
-
-#bg-video source{
-    /* position: fixed; */
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 80%;
-    min-height: 80%; */
-    width: 100%;
-    height: 100%;
-    /* z-index: -1; */
-    /* margin-top: 50px; */
+    overflow: hidden;
 }
 
-.bg_box{
-    backdrop-filter: blur(10px);
+nav li {
+    float: left;
 }
 
-.content {
-    margin: -30px;
-    display: flex;
-    justify-content: center;
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-#cardContainer {
-    display: flex;
-    flex-direction: column;
+nav li a:hover {
+    background-color: #555;
+    /* Цвет фона при наведении */
 }
 
-.cardContainer_img {
-    width: 130px;
-    height: 180px;
+.server_sign a {
+    text-decoration: none;
+
 }
 
-.cardContainer_text {
-    /* display: flex;
-    justify-content: right;
-    text-align: right; */
+#server_sign_play {
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 10px;
+    width: 85px;
+}
+
+#server_sign_up{
+    padding: 5px;
+    background-color: rgb(81, 81, 81);
+    border-radius: 5px;
+    width: 75px;
 }
