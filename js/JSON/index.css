@@ -1,0 +1,97 @@
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px 0;
+    height: 500px;
+    width: 40%;
+}
+.cart h1{
+    margin: 0;
+}
+.cart h3{
+    margin: 10px 0px;
+}
+.banan{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+}
+.banan-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.banan-text-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.p{
+    margin: 0;
+}
+.banan-text-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.kg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    background-color: rgb(200, 200, 200);
+    padding: 3px;
+    border-radius: 10px;
+}
+.icon{
+    color: grey;
+    width: 20px;
+    height: 20px;
+}
+
+.pp{
+    margin-top: 40px;
+}
+.zakaz{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 20%;
+}
+.zakaz1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+hr{
+    margin: 0;
+    border: 1px solid rgb(235, 235, 235);
+    width: 100%;
+}
+
+.zakaz button{
+    width: 100%;
+    padding: 15px;
+    background-color: #53c95a;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+}

@@ -1,120 +1,70 @@
-const cards = [{
+const cards = [
+    {
     id: 1,
-    imgUrl: "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt047326b54b9b244d/65bc3bac7d4ae72c4a981dbf/TFT_Patch_Notes_14-3_Banner.jpg?quality=90&crop=1%3A1&width=240",
-    name: "Teamfight Tactics: изменения обновления",
-    text: "Начинается последний цикл Лунного Фестиваля - а значит, у вас осталась пара недель, чтобы приобрести косметические товары события. В этом обновлении мы стандартизируем добычу на ранних этапах матча, а также корректируем игровой баланс.",
-
-
-}, {
+    imgUrl: "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt8119faecaa62d9be/65cab252670d7e5357280f8b/2020_key_art_Banner.jpg?quality=90&crop=1%3A1&width=480",
+    name: "Новости об игре",
+    text: "Изменения обновления 14.3",
+    text2: 'Встречайте обновление 14.3 и Лунный пир 2024!',
+}, 
+{
     id: 2,
-    imgUrl: "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt047326b54b9b244d/65bc3bac7d4ae72c4a981dbf/TFT_Patch_Notes_14-3_Banner.jpg?quality=90&crop=1%3A1&width=240",
-    name: "Teamfight Tactics: изменения обновления",
-    text: "Начинается последний цикл Лунного Фестиваля - а значит, у вас осталась пара недель, чтобы приобрести косметические товары события. В этом обновлении мы стандартизируем добычу на ранних этапах матча, а также корректируем игровой баланс.",
-
-
-}, {
+    imgUrl: "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt07cc3a4f8c68a4f4/65c2d813d6cf044d1a152212/020624_LNY24_music-theme_no_text_1920x1080_RK.jpg?quality=90&crop=1%3A1&width=480",
+    name: "Медиа",
+    text: "Музыкальная тема события 'Лунный пир 2024'",
+    text2: 'Слушайте музыкальную тему Лунного пира 2024 и взмывайте в небо с духом дракона.',
+},
+{
     id: 3,
-    imgUrl: "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt047326b54b9b244d/65bc3bac7d4ae72c4a981dbf/TFT_Patch_Notes_14-3_Banner.jpg?quality=90&crop=1%3A1&width=240",
-    name: "Teamfight Tactics: изменения обновления",
-    text: "Начинается последний цикл Лунного Фестиваля - а значит, у вас осталась пара недель, чтобы приобрести косметические товары события. В этом обновлении мы стандартизируем добычу на ранних этапах матча, а также корректируем игровой баланс.",
-
-
+    imgUrl: "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt84a53cac88bcdf1d/65971771b6f924d7dcbe284e/Smolder-Header.jpg?quality=90&crop=1%3A1&width=480",
+    name: "Уголок разработчиков",
+    text: "ИСТОРИЯ СОЗДАНИЯ ЧЕМПИОНА: СМОЛДЕР",
+    text2: 'Убийственная огнедышащая милота.',
 },
 
 ]
 
-// function createCard(title, imageUrl, description) {
-//     // Create main container element
-//     var cardContainer = document.createElement("div");
-//     cardContainer.id = "cardContainer";
+function createCardContainer(i) {
+    // Create elements
+    const cardContainer = document.createElement('div');
+    const imgContainer = document.createElement('div');
+    const img = document.createElement('img');
+    const textContainer = document.createElement('div');
+    const h4 = document.createElement('h4');
+    const h3 = document.createElement('h3');
+    const p = document.createElement('p');
+    cardContainer.addEventListener('mouseenter', () => {
+        img.style.transform = 'scale(1.0)'
+        cardContainer.style.borderRadius = '0px 0px 0px 0px'
+        img.style.transition = 'transform 1s ease'
+        cardContainer.style.transition = 'border-radius 0.5s ease'
+    })
+    cardContainer.addEventListener('mouseleave',() => {
+        img.style.transform = 'scale(1.1)'
+        cardContainer.style.borderRadius = '0px 30px 0px 0px'
+    })
+    // Set attributes
+    cardContainer.id = 'cardContainer';   
+    textContainer.classList.add('cardContainer_text');
+    h4.textContent = i.name;
+    h3.textContent = i.text;
+    p.textContent = i.text2;
 
-//     // Create image container element
-//     var imgContainer = document.createElement("div");
-//     imgContainer.classList.add("cardContainer_img");
+    // Append elements
+    imgContainer.appendChild(img);
+    textContainer.appendChild(h4);
+    textContainer.appendChild(h3);
+    textContainer.appendChild(p);
+    cardContainer.appendChild(imgContainer);
+    cardContainer.appendChild(textContainer);
 
-//     // Create image element
-//     var img = document.createElement("img");
-//     img.src = imageUrl;
-//     img.alt = "";
-
-//     // Append image to image container
-//     imgContainer.appendChild(img);
-
-//     // Create text container element
-//     var textContainer = document.createElement("div");
-//     textContainer.classList.add("cardContainer_text");
-
-//     // Create title element
-//     var titleElement = document.createElement("h3");
-//     titleElement.textContent = title.name;
-
-//     // Create description element
-//     var descriptionElement = document.createElement("p");
-//     descriptionElement.textContent = description;
-
-//     // Append title and description to text container
-//     textContainer.appendChild(titleElement);
-//     textContainer.appendChild(descriptionElement);
-
-//     // Append image container and text container to main container
-//     cardContainer.appendChild(imgContainer);
-//     cardContainer.appendChild(textContainer);
-
-//     // Return the created card container
-//     return cardContainer;
-// }
-
-
-
-function createLamodaCard(rest) {
-    // Create main div element with class "lamoda-card"
-    var lamodaCard = document.createElement("div");
-    lamodaCard.className = "lamoda-card";
-
-    // Create div element with class "lamoda-img"
-    var lamodaImg = document.createElement("div");
-    lamodaImg.className = "lamoda-img";
-
-    // Create img element with src, width, and height attributes
-    var img = document.createElement("img");
-    img.src = rest.imgUrl;
-    img.style.height = "250px";
-
-    // Append img to lamodaImg
-    lamodaImg.appendChild(img);
-
-    // Create div element with class "lamoda-text"
-    var lamodaText = document.createElement("div");
-    lamodaText.className = "lamoda-text";
-
-    // Create h3 element for heading
-    var heading = document.createElement("h3");
-    heading.textContent = rest.name;
-
-    // Create p element for paragraph
-    var paragraph = document.createElement("p");
-    paragraph.textContent = `${rest.text}`;
-
-    // Append heading and paragraph to lamodaText
-    lamodaText.appendChild(heading);
-    lamodaText.appendChild(paragraph);
-
-    // Append lamodaImg and lamodaText to lamodaCard
-    lamodaCard.appendChild(lamodaImg);
-    lamodaCard.appendChild(lamodaText);
-
-    // Return the constructed card
-    return lamodaCard;
+    // Return the card container element
+    return cardContainer;
 }
 
+let container = document.querySelector('.section-cards')
 
-
-
-const r = document.querySelector("#cardContainer")
-
-for (let i of cards) {
-    let container = createLamodaCard(i)
-    r.appendChild(container)
+for(let i of cards){
+    let card = createCardContainer(i)
+    container.appendChild(card)
 }
 
-// Append the created card to some existing container in your HTML document
