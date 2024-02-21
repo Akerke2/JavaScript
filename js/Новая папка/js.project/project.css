@@ -1,0 +1,207 @@
+/* header {
+
+
+
+}
+
+.container {
+    display: flex;
+
+}
+
+.container_nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+ */
+
+
+/* Общие стили для заголовка */
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #1c1c1e;
+    /* Цвет фона */
+    color: #fff;
+    /* Цвет текста */
+    padding: 10px 20px;
+    /* Отступы внутри */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Тень */
+}
+
+.logo img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7px;
+}
+
+.container_nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container_nav select{
+    background-color: #1c1c1e;
+    color: #fff;
+    border-radius: none;
+    border: none;
+}
+
+
+.container ul{
+    width: 1200px;
+    /* Ширина контейнера */
+    margin: 0 auto;
+    /* Выравнивание по центру */
+}
+
+/* Стили для навигационного меню */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #555;
+    /* Цвет фона при наведении */
+}
+
+.server_sign a {
+    text-decoration: none;
+
+}
+
+#server_sign_eart{
+    margin: 15px;
+}
+
+#server_sign_play {
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 10px;
+    width: 85px;
+}
+
+#server_sign_up{
+    padding: 5px;
+    background-color: rgb(81, 81, 81);
+    border-radius: 5px;
+    width: 75px;
+}
+.bg_box {
+    width: 100%;
+    position: relative;
+}
+
+#bg-video {
+    filter:blur(5px);
+    width: 100%;
+
+}
+
+#top-video{
+    width: 100%;
+    
+}
+.video-content {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.video-content img {
+    object-fit: cover;
+}
+.video-content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content{
+        position: absolute;
+}
+
+/* 2 */
+.section-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    gap: 50px;
+}
+#cardContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid gray;
+    width: 25%;
+    height: 170px;
+    
+    border-radius: 0px 30px 0px 0px;
+}
+.cardContainer_img{
+    overflow: hidden;
+    width: 35px;
+    height: 40px;
+    margin-left: -20px;
+    z-index: -1;
+}
+.cardContainer_img img{
+    transform: scale(1.1);
+
+}
+
+.cardContainer_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 7px;
+    width: 70%;
+    height: 100%;
+    
+}
+
+.cardContainer_text h4{
+    margin: 0;
+    color: gray;
+}
+.cardContainer_text h3{
+    margin: 0;
+    color: rgb(83, 83, 83);
+    font-size: 18px;
+}
+.cardContainer_text p{
+    margin: 0;
+    font-size: 13px;
+}

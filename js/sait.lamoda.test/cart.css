@@ -1,0 +1,170 @@
+main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.cart-left {
+    width: 60%;
+}
+
+#cart-size {
+    color: #53c95a;
+}
+.cart-items-top, #display-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#clear-cart {
+    background-color: transparent;
+    border: none;
+    color: #bdbdbd;
+}
+
+#clear-cart:hover {
+    color: grey;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.cart-item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    transition: 0.4s;
+}
+
+.cart-item button, .cart-item p {
+    background: transparent;
+    border: none;
+    margin:0;
+}
+
+.cart-item-left {
+    display: flex;
+    gap: 10px;
+}
+
+.cart-item-left img {
+    width: 80px;
+    border-radius: 5px;
+}
+
+.cart-item-left-actions {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.cart-item-left-actions a {
+    align-self: flex-start;
+    text-decoration: none;
+    color: black;
+}
+
+.cart-item-left-actions a:hover {
+    color: #53c95a;
+}
+
+.cart-item-amount {
+    display: flex;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    align-items: flex-start;
+    align-self: flex-start;
+    overflow: hidden;
+    min-width: 80px;
+}
+
+.cart-item-amount:hover {
+    background-color: lightgray;
+}
+
+.cart-item-amount button {
+    height: 100%;
+    padding: 3px;
+    width: 33%;
+}
+
+.cart-item-amount button:hover {
+    background-color: gray;
+}
+
+.cart-item-amount p {
+    width: 34%;
+    text-align: center;
+    padding: 3px;
+}
+
+.cart-item-right p {
+    margin: 0;
+    font-weight: 700;
+}
+
+.cart-item-right {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.cart-item-right button {
+    color: #bdbdbd;
+    align-self: flex-start;
+}
+
+.cart-item-right ion-icon {
+    transform: scale(1.5);
+}
+
+.cart-item-right p {
+    align-self: flex-end;
+    padding: 0 5px;
+}
+
+.cart-right {
+    width: 40%;
+}
+
+.purchase-details {
+    width: 80%;
+    margin: 0 auto;
+}
+.purchase-details table {
+    width: 100%;
+}
+
+.purchase-details td {
+padding: 10px 0px;
+}
+
+.purchase-details button {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #53c95a;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+}
+
+@media (width <= 650px) {
+    main { 
+        flex-direction: column;
+    }
+    .cart-left {
+        width: 100%;
+    }
+    .cart-right {
+        width: auto;
+    }
+  }

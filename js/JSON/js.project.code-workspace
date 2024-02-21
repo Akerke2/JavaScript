@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../js.project"
+		},
+		{
+			"path": "../../../forExaples"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "forExaples"
+	}
+}

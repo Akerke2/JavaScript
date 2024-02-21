@@ -1,0 +1,79 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+nav h1 {
+    margin: 0;
+    transform: translateX(-50%);
+    color: #53c95a;
+}
+
+.kz {
+    color: orangered;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.header-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-actions ion-icon {
+    transform: scale(1.5);
+    padding: 0 5px;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: start;
+    max-width: 200px;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card h3, .card p {
+    margin: 0;
+}
+
+.card button {
+    background: lightgray;
+    color: black;
+    font-weight: 600;
+    padding: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.card button:active:hover {
+    background-color: grey;
+}

@@ -478,13 +478,13 @@
 // console.log(cityPopulation(citiesPoplation))
 
 // // 
-function k(nums) {
-    nums.forEch((value, index) => {
-        nums[index] = value + 
-})
-    return nums
-}
-console.log(k([5, 6]))
+// function k(nums) {
+//     nums.forEch((value, index) => {
+//         nums[index] = value + 
+// })
+//     return nums
+// }
+// console.log(k([5, 6]))
 
 // 11 -  15, 23 level1
 // hw
