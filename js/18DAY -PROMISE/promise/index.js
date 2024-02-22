@@ -89,70 +89,122 @@
 
 // ССЫЛКАНЫҢ ЖАНЫНА ҚАНДАЙДА БІР САН ЖАЗСАҚ СОЛ САНДЫ АЙДИ ҚЫЛЫП АЛЫП ИМЕННО СОЛ ТОВАРДЫ ШЫҒАРЫП БЕРЕДІ КОНЕЧНО НЕ ТОЛЬКО ТОВАР НЕ ЖАЗСАҢ СОНЫ
 
-function createCardElement(cardInfo) {
-    const cardDiv = document.createElement('div');
-    cardDiv.classList.add('card');
+// function createCardElement(cardInfo) {
+//     const cardDiv = document.createElement('div');
+//     cardDiv.classList.add('card');
 
-    const imgElement = document.createElement('img');
-    imgElement.setAttribute('src', cardInfo.image);
-    imgElement.setAttribute('width', '80px');
-    imgElement.setAttribute('alt', '');
+//     const imgElement = document.createElement('img');
+//     imgElement.setAttribute('src', cardInfo.image);
+//     imgElement.setAttribute('width', '80px');
+//     imgElement.setAttribute('alt', '');
 
-    const titleElement = document.createElement('p');
-    titleElement.textContent = cardInfo.title;
+//     const titleElement = document.createElement('p');
+//     titleElement.textContent = cardInfo.title;
 
-    const descriptionElement = document.createElement('p');
-    descriptionElement.textContent = cardInfo.description;
+//     const descriptionElement = document.createElement('p');
+//     descriptionElement.textContent = cardInfo.description;
 
-    const categoryElement = document.createElement('p');
-    categoryElement.textContent = cardInfo.category;
+//     const categoryElement = document.createElement('p');
+//     categoryElement.textContent = cardInfo.category;
 
-    const priceElement = document.createElement('p');
-    priceElement.textContent = cardInfo.price;
+//     const priceElement = document.createElement('p');
+//     priceElement.textContent = cardInfo.price;
 
-    cardDiv.appendChild(imgElement);
-    cardDiv.appendChild(titleElement);
-    cardDiv.appendChild(descriptionElement);
-    cardDiv.appendChild(categoryElement);
-    cardDiv.appendChild(priceElement);
+//     cardDiv.appendChild(imgElement);
+//     cardDiv.appendChild(titleElement);
+//     cardDiv.appendChild(descriptionElement);
+//     cardDiv.appendChild(categoryElement);
+//     cardDiv.appendChild(priceElement);
 
-    return cardDiv;
+//     return cardDiv;
+// }
+
+
+
+// const url = "https://fakestoreapi.com/products"
+// fetch(url)
+//     .then((response) => response.json())
+
+//     .then((data) => {
+//         const cards = document.querySelector(".cards")
+//         data.forEach((product) => {
+//             cards.appendChild(createCardElement(product))
+//         })
+//     })
+//     .catch((error) => {
+//         const cards = document.querySelector(".cards")
+//         cards.innerHTML = `<p>Eror occured. Error: ${error}`
+//     })
+
+
+
+
+// const url1 = "https://opentdb.com/api.php?amount=10&category=17&difficulty=easy"
+// fetch(url1)
+//     .then((response) => response.json())
+//     .then((data) => data.results)
+
+//     .then((data) => {
+//         console.log(data);
+//     })
+//     .catch((error) => {
+//         const cards = document.querySelector(".cards")
+//         cards.innerHTML = `<p>Eror occured. Error: ${error}`
+//     })
+
+
+
+
+
+function createQuestionForm(i) {
+    var container = document.createElement('div');
+
+    var heading = document.createElement('h2');
+    heading.textContent = i.question;
+
+    var form = document.createElement('form');
+    form.setAttribute('action', '');
+    form.setAttribute('class', 'test');
+
+
+    for (let j = 0; j < i.incorrect_answers.length; j++) {
+        var input = document.createElement('input');
+        input.setAttribute('type', 'radio');
+        input.setAttribute('name', 'answer'); // Устанавливаем одинаковое имя для всех радиокнопок этого вопроса
+
+        var label = document.createElement('label');
+        label.textContent = i.incorrect_answers[j];
+
+        form.appendChild(input);
+        form.appendChild(label);
+        form.appendChild(document.createElement('br'));
+    }
+    var input = document.createElement('input');
+    input.setAttribute('type', 'radio');
+    input.setAttribute('name', 'answer');
+
+    var label = document.createElement('label');
+    label.textContent = i.correct_answer
+
+    form.appendChild(input);
+    form.appendChild(label);
+    form.appendChild(document.createElement('br'));
+
+    container.appendChild(heading);
+    container.appendChild(form);
+    return container;
 }
 
 
 
-const url = "https://fakestoreapi.com/products"
-fetch(url)
-    .then((response) => response.json())
-
+const urlk = 'https://opentdb.com/api.php?amount=10&category=17&difficulty=easy'
+fetch(urlk)
+    .then(response => response.json())
     .then((data) => {
-        const cards = document.querySelector(".cards")
-        data.forEach((product) => {
-            cards.appendChild(createCardElement(product))
+        let div = document.querySelector('.test-2')
+        data.results.forEach((card) => {
+            div.appendChild(createQuestionForm(card))
         })
     })
-    .catch((error) => {
-        const cards = document.querySelector(".cards")
-        cards.innerHTML = `<p>Eror occured. Error: ${error}`
-    })
-
-
-
-
-const url1 = "https://opentdb.com/api.php?amount=10&category=17&difficulty=easy"
-fetch(url1)
-    .then((response) => response.json())
-    .then((data) => data.results)
-
-    .then((data) => {
-        console.log(data);
-    })
-    .catch((error) => {
-        const cards = document.querySelector(".cards")
-        cards.innerHTML = `<p>Eror occured. Error: ${error}`
-    })
-
-
-
-
-
+    // .then(data => console.log(data.results))
+    .catch(error => console.error(error))
