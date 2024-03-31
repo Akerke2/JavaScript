@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign in & Sign up Form</title>
+  <link rel="stylesheet" href="./log.css" />
+</head>
+
+<body>
+
+
+
+
+  <main>
+    <div class="login">
+      <div class="login_box">
+        <div class="forms-wrap">
+          <form action="" autocomplete="off" class="sign-up-form">
+            <div class="logo">
+              <img src="./img/logo.png" width="20px" alt="easyclass" />
+              <h4>League Legends</h4>
+            </div>
+
+            <div class="heading">
+              <h2>Get Started</h2>
+              <h6>Already have an account?</h6>
+              <a href="#" class="toggle">Sign in</a>
+            </div>
+
+            <div class="actual-form">
+              <div class="input-wrap">
+                <input type="text" minlength="4" class="input-field" autocomplete="off" required id="sign-up-name" />
+                <label>Name</label>
+              </div>
+
+              <div class="input-wrap">
+                <input type="email" class="input-field" autocomplete="off" required id="sign-up-email" />
+                <label>Email</label>
+              </div>
+
+              <div class="input-wrap">
+                <input type="password" minlength="4" class="input-field" autocomplete="off" required
+                  id="sign-up-password" />
+                <label>Password</label>
+              </div>
+
+              <button type="button" id="sign-up-button" class="sign-btn">Sign up</button>
+
+              <div class="auth-error" id="sign-up-error">
+                <p></p>
+              </div>
+
+              <p class="text">
+                By signing up, I agree to the
+                <a href="#">Terms of Services</a> and
+                <a href="#">Privacy Policy</a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="carousel">
+          <div class="images-wrapper">
+            <img src="./" class="image img-1 show" alt="" />
+            <img src="./" class="image img-2" alt="" />
+            <img src="./" class="image img-3" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+  <!-- <main>
+    <div class="box">
+      <div class="inner-box">
+        <div class="forms-wrap">
+          <form action="#" autocomplete="off" class="sign-in-form">
+            <div class="logo">
+              <img src="./img/logo.png" alt="easyclass" />
+              <h4>league of legends</h4>
+            </div>
+          
+            <div class="heading">
+              <h2>Welcome Back</h2>
+              <h6>Not registered yet?</h6>
+              <a href="#" class="toggle">Sign up</a>
+            </div>
+          
+            <div class="actual-form">
+              <div class="input-wrap">
+                <input type="text" id="username" minlength="4" class="input-field" autocomplete="off" required />
+                <label for="username">Name</label>
+              </div>
+          
+              <div class="input-wrap">
+                <input type="password" id="password" minlength="4" class="input-field" autocomplete="off" required />
+                <label for="password">Password</label>
+              </div>
+          
+              <input type="submit" value="Sign In" class="sign-btn sign-in-btn" />
+          
+              <div class="auth-error">
+                <p></p>
+              </div>
+          
+              <p class="text">
+                Forgotten your password or your login details?
+                <a href="#">Get help</a> signing in
+              </p>
+            </div>
+          </form>
+          
+
+          <form autocomplete="off" class="sign-up-form">
+            <div class="logo">
+              <img src="" alt="easyclass" />
+              <h4>League of Legends</h4>
+            </div>
+
+            <div class="heading">
+              <h2>Get Started</h2>
+              <h6>Already have an account?</h6>
+              <a href="#" class="toggle">Sign in</a>
+            </div>
+
+            <div class="actual-form">
+              <div class="input-wrap">
+                <input type="text" minlength="4" class="input-field" autocomplete="off" required id="sign-up-name" />
+                <label>Name</label>
+              </div>
+
+              <div class="input-wrap">
+                <input type="email" class="input-field" autocomplete="off" required id="sign-up-email" />
+                <label>Email</label>
+              </div>
+
+              <div class="input-wrap">
+                <input type="password" minlength="4" class="input-field" autocomplete="off" required id="sign-up-password" /> 
+                <label>Password</label>
+              </div>
+
+              <button type="button" id="sign-up-button" class="sign-btn sign-up-btn">Sign up</button>
+
+              <div class="auth-error" id="sign-up-error">
+                <p></p>
+              </div>
+
+              <p class="text">
+                By signing up, I agree to the
+                <a href="#">Terms of Service</a> and
+                <a href="#">Privacy Policy</a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="carousel">
+          <div class="images-wrapper">
+            <img
+              src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt541a50735cae8db5/64482576b7b7332b233e363b/JaxHeader.jpg"
+              class="image img-1 show" alt="" />
+            <img
+              src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte25f83328b7ff842/62bddb497d7fd04d37767f05/07_TwilightStar.jpg"
+              class="image img-2" alt="" />
+            <img
+              src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt366e461a3acc1e4a/65544864cf92374c841b9e2d/112023_Patch_13_23_Notes_Banner.jpg"
+              class="image img-3" alt="" />
+          </div>
+
+          <div class="text-slider">
+            <div class="text-wrap">
+              <div class="text-group">
+                <h2>Game</h2>
+                <h2>Universe</h2>
+                <h2>Fairy tale</h2>
+              </div>
+            </div>
+
+            <div class="bullets">
+              <span class="active" data-value="1"></span>
+              <span data-value="2"></span>
+              <span data-value="3"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main> -->
+
+  <!-- Javascript file -->
+
+  <script src="app.js"></script>
+  <script src="./register.js"></script>
+</body>
+
+</html>

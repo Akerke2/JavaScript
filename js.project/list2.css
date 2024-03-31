@@ -7,6 +7,9 @@
     /* width: 100%; */
     margin: auto;
     gap: 50px;
+    overflow: hidden;
+
+
 }
 
 #cardContainer {
@@ -173,3 +176,4 @@
     width: 40%;
     margin-left: 20px;
 }
+

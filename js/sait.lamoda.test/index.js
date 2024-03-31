@@ -1,35 +1,37 @@
-const clothes = [
-    {
-        id: 1,
-        brand: "Reebok",
-        imgUrl: "https://a.lmcdn.ru/product/R/T/RTLACN769003_22188898_1_v1_2x.jpg",
-        price: 16100,
-        category: "Футболка спортивная",
-    },
-    {
-        id: 2,
-        brand: "Mango Man",
-        imgUrl: "https://a.lmcdn.ru/img600x866/R/T/RTLADF619601_22105044_1_v1.jpg",
-        price: 19990,
-        category: "Свитшот NOLA",
-    },
-    {
-        id: 3,
-        brand: "Befree",
-        imgUrl:
-            "https://a.lmcdn.ru/img600x866/M/P/MP002XW127K0_21862929_1_v1_2x.jpg",
-        price: 18660,
-        category: "Платье",
-    },
-    {
-        id: 4,
-        brand: "Snow Airwolf",
-        imgUrl:
-            "https://a.lmcdn.ru/img600x866/R/T/RTLADC667701_21629813_1_v1_2x.jpg",
-        price: 34100,
-        category: "Куртка утепленная",
-    },
-];
+// const clothes = [
+//     {
+//         id: 1,
+//         brand: "Reebok",
+//         imgUrl: "https://a.lmcdn.ru/product/R/T/RTLACN769003_22188898_1_v1_2x.jpg",
+//         price: 16100,
+//         category: "Футболка спортивная",
+//     },
+//     {
+//         id: 2,
+//         brand: "Mango Man",
+//         imgUrl: "https://a.lmcdn.ru/img600x866/R/T/RTLADF619601_22105044_1_v1.jpg",
+//         price: 19990,
+//         category: "Свитшот NOLA",
+//     },
+//     {
+//         id: 3,
+//         brand: "Befree",
+//         imgUrl:
+//             "https://a.lmcdn.ru/img600x866/M/P/MP002XW127K0_21862929_1_v1_2x.jpg",
+//         price: 18660,
+//         category: "Платье",
+//     },
+//     {
+//         id: 4,
+//         brand: "Snow Airwolf",
+//         imgUrl:
+//             "https://a.lmcdn.ru/img600x866/R/T/RTLADC667701_21629813_1_v1_2x.jpg",
+//         price: 34100,
+//         category: "Куртка утепленная",
+//     },
+// ];
+
+// console.log(JSON.stringify(clothes));
 
 
 function createCard(product) {
@@ -85,10 +87,25 @@ function createCard(product) {
 }
 
 const container = document.querySelector(".cards")
-for (let i of clothes) {
-    let car = createCard(i)
-    container.appendChild(car)
-}
+
+const url = 'https://65d6c4e3f6967ba8e3be85e9.mockapi.io/Products' // countries api
+fetch(url)
+    .then(response => response.json()) // accessing the API data as JSON
+
+    .then(data => {
+        data.forEach((product) => {
+            container.appendChild(createCard(product))
+        })
+    })
+    .catch(error => console.error(error)) // handling error if something wrong happens
+
+
+
+
+// for (let i of clothes) {
+//     let car = createCard(i)
+//     container.appendChild(car)
+// }
 
 
 // HW
@@ -163,3 +180,12 @@ for (let i of clothes) {
 // ДОПОЛНИТЕЛЬНЫЕ УРОКИ
 
 
+// ПОДГОТОВКА К ТЕСТУ
+
+fetch("")
+then(response => {
+    if (!response) {
+        throw new error('network was not work')
+    }
+    return response.json()
+})

@@ -41,19 +41,19 @@
     <div class="container">
         <nav class="container_nav">
             <ul>
-                <li><a href="#">Об Игре</a></li>
-                <li><a href="#">Чемпионы</a></li>
+                <li><a href="./game/index.html">Об Игре</a></li>
+                <li><a href="">Чемпионы</a></li>
                 <li>
                     <select>
                         <option value="">Новости</option>
-                        <option value="">Об игре</option>
-                        <option value="">Киберспорт</option>
+                        <option value="" >Об игре</option>
+                        <option value="" >Киберспорт</option>
                         <option value="">Вселенная</option>
                         <option value="">Медиа</option>
                         <option value="">Сообщество</option>
                     </select>
                 </li>
-                <li><a href="#">Описания Обновления</a></li>
+                <li><a href="./opisanie/index.html">Описания Обновления</a></li>
                 <li>
                     <select>
                         <option value="">Дополнительно</option>
@@ -76,6 +76,9 @@
     </div>
 
     <div class="server_sign">
+        <button id="my_basket">
+            <img src="https://avatars.mds.yandex.net/i?id=9d494634699216a78f45df987dd377eb1587ccdf-10386268-images-thumbs&n=13" width="25px" alt="">
+        </button>
         <a href="" id="server_sign_eart">
             <ion-icon name="earth-outline"></ion-icon>
         </a>
@@ -84,207 +87,396 @@
             id="server_sign_up">sign up</button>
 
         <button a
-            href="https://signup.ru.leagueoflegends.com/ru?_ga=2.144859059.607972500.1707551194-757082792.1707551194&_gl=1*wu9g2*_ga*NzU3MDgyNzkyLjE3MDc1NTExOTQ.*_ga_FXBJE5DEDD*MTcwNzczOTUyNC41LjEuMTcwNzc0MTY1NS4wLjAuMA.."
+            href="https://signup.ru.leagueoflegends.com/ru?_gl=1*1h3c2ex*_ga*NzU3MDgyNzkyLjE3MDc1NTExOTQ.*_ga_FXBJE5DEDD*MTcwOTA0MDYxOS4zNC4xLjE3MDkwNDM3NzUuMC4wLjA.&_ga=2.123456779.1205415253.1708916166-757082792.1707551194"
             id="server_sign_play">Играть</button>
     </div>
 </header>
 
-<div class="bg_box">
-    <div class="bg_video">
-        <video autoplay muted loop id="bg-video">
-            <source id="" src="https://www.leagueoflegends.com/static/hero-c35bd03ceaa5f919e98b20c905044a3d.webm"
-                weight="100px" type="video/mp4">
+<body>
+    <div class="bg_box">
+        <div class="bg_video">
+            <video autoplay muted loop id="bg-video">
+                <source id="" src="https://www.leagueoflegends.com/static/hero-c35bd03ceaa5f919e98b20c905044a3d.webm"
+                    weight="100px" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-content">
+            <div class="border-line"></div>
+            <video autoplay muted loop id="top-video">
+                <source src="https://www.leagueoflegends.com/static/hero-c35bd03ceaa5f919e98b20c905044a3d.webm"
+                    weight="100px" type="video/mp4">
+            </video>
+            <div>
+                <img src="https://www.leagueoflegends.com/static/logo-1200-04b3cefafba917c9c571f9244fd28a1e.png"
+                    height="250px" alt="">
+                <button>
+                    <div class="btn_botder"></div>
+                    Игrать бесплатно
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Карточки -->
+    <section class="section-cards">
+        <!-- <div id="cardContainer"> -->
+        <!-- <div class="cardContainer_img"> -->
+        <img src="./list2.html" alt="">
+        </div>
+        <!-- <div class="cardContainer_text"> -->
+        <!-- <h4>Новости об игре</h4>
+            <h3>Изменения обновления 14.3</h3>
+            <p>Встречайте обновление 14.3 и Лунный пир 2024!</p> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- <a href="./list2.html">LOOK ==></a> -->
+    </section>
+
+
+
+    <!-- САМЫЙ СЛОЖНЫЙ ЧАСТЬ -->
+
+    <section>
+        <div class="section-3">
+            <div class="section-3-title">
+                <div class="title-3">
+                    <span>Выберите</span>
+                    <h1>чемпиона</h1>
+                    <p>
+                        Хотите бросаться в самую гущу боя или помогать союзникам? А
+                        может,<br />
+                        делать всего понемногу? В Ущелье вы всегда найдете, чем заняться.
+                    </p>
+                    <div class="btn-section-3">
+                        <div class="style-wrapper-button">
+                            <div class="bg-color-1">
+                                <a class="style-button bg-color-1">
+                                    Показать больше чемпионов
+                                </a>
+                            </div>
+                            <div class="bg-color-2">
+                                <a clss="style-button bg-color-2">Начать игру</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ИКОНКИ -->
+                <div class="section-3-wrapper">
+                    <div class="sec-list-1">
+                        <ul class="list-item-section-3">
+                            <li>
+                                <button class="style-button-list">
+                                    <span class="style-button-icon">
+                                        <div class="icon-sec-3">
+                                            <div>
+                                                <span class="icon-svg">
+                                                    <svg viewBox="0 0 100 100">
+                                                        <path
+                                                            d="M56.59,73.71l1.67-2.88c5.75-9.34,5.51-16,3.83-20.59a39.78,39.78,0,0,1-9.1,16,2,2,0,0,1-1.43.48H48.2A2.17,2.17,0,0,1,46.53,66a39.78,39.78,0,0,1-9.1-16c-1.68,4.55-1.68,11.26,3.83,20.59l1.68,2.88-3.36,5.75h0L49.64,96.94,59.7,79.22Z">
+                                                        </path>
+                                                        <path
+                                                            d="M73.11,38.74c-3.35-4.31-6-10-6-18.91,0-4.07-3.59-8.15-7.66-12-4.79-4.31-5.75-5.74-9.58-5.74h0c-3.83,0-4.79,1.43-9.34,5.74-4.07,3.83-7.66,7.91-7.66,12,0,8.86-2.88,14.6-6,18.68L12.76,52.87,2.23,45.69V58.62S2.47,84,39.58,97.89c0,0-14.13-7.18-16.28-31.13-.24-1.67-.24-9.1-.24-10.29A119.77,119.77,0,0,0,36.71,74h0c-.72-1.2-1.44-2.64-2.16-3.83-5-10.54-4.07-18.2-1.67-23.47a22.77,22.77,0,0,1,7.42-8.86l9.58,9.58h0l9.58-9.58a22.77,22.77,0,0,1,7.42,8.86c2.4,5.27,3.59,12.93-1.43,23.23C64.73,71.31,64,72.51,63.29,74h0A119.77,119.77,0,0,0,76.94,56.47c0,1.19,0,8.62-.24,10.29C74.31,90.71,60.42,97.89,60.42,97.89,97.53,84,97.77,58.62,97.77,58.62V45.69L87.24,52.87Z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Убийцы</span>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </span>
+                                </button>
+                                <span class="circle-sec-3"></span>
+                            </li>
+                            <li>
+                                <button class="style-button-list">
+                                    <span class="style-button-icon">
+                                        <div class="icon-sec-3">
+                                            <div>
+                                                <span class="icon-svg">
+                                                    <svg viewBox="0 0 100 100">
+                                                        <path
+                                                            d="M67.84,56.35v5.5h0c8.62-8.62,14.37,0,14.37,0C112.14,40.78,90.35,2,90.35,2s-.72,17.24-15.08,27.77V46.29c-.24,4.79-3.84,7.9-7.43,10.06">
+                                                        </path>
+                                                        <path
+                                                            d="M17.79,62.09s4.07-6.46,10.78-2.63L20.91,48.2l6.7-16c-17.24-10.54-18-29.93-18-29.93S-12.14,41,17.79,62.09">
+                                                        </path>
+                                                        <path
+                                                            d="M26.89,83.89,32.4,65.21l-.24-.48L19.23,77.9A17.78,17.78,0,0,1,7.5,83.17H3L2,85.56l12,11.5Z">
+                                                        </path>
+                                                        <path
+                                                            d="M92.27,83.89a16.24,16.24,0,0,1-11.74-5.27L68.8,66.88,72.63,84.6,85.8,98l12-11.49-1-2.4Z">
+                                                        </path>
+                                                        <path
+                                                            d="M55.87,42.7c0,.24-.24.48-.24.71h.72c5.75.48,7.66,2.64,9.1,7.67a9.35,9.35,0,0,0,2.39-1.92c1-1,1.68-1.67,1.68-2.63V28.09a2,2,0,0,0-1.68-1.92L36.47,20.43H36a2.39,2.39,0,0,0-2.39,2.39v6.71l24.9,3.35Z">
+                                                        </path>
+                                                        <path
+                                                            d="M60.18,54c-1.2-5.27-1.44-4.55-5.75-4.79L40.78,48V44.13h5.51A4.09,4.09,0,0,0,50.36,41l1-3.35L32.4,35l-5,12.22,11.74,17L33.6,82.69,49.88,98,66.41,82.93s-6.23-28.5-6.23-29">
+                                                        </path>
+                                                        <path d="M49.88,2.23,45.09,12.52l4.79,3.83,4.79-3.83Z"></path>
+                                                        <path d="M62.1,9.41l1.43,6h6l2.87-11Z"></path>
+                                                        <path d="M30.25,15.4h6l.24-.72,1.2-5.27-10.3-5Z"></path>
+                                                    </svg>
+                                                    <span>Воины</span>
+                                                </span>
+                                            </div>
+                                        </div>
+
+
+                                    </span>
+                                </button>
+                                <span class="circle-sec-3"></span>
+                            </li>
+                            <li>
+                                <button class="style-button-list">
+                                    <span class="style-button-icon">
+                                        <div class="icon-sec-3">
+                                            <div>
+                                                <span class="icon-svg">
+                                                    <svg viewBox="0 0 100 100">
+                                                        <path
+                                                            d="M84.48,77.3H97.89L94.06,64.37H84.48A36.73,36.73,0,0,0,56.94,76.82L50,85l-6.94-8.14A36.73,36.73,0,0,0,15.52,64.37H5.94L2.11,77.3H15.52A36.73,36.73,0,0,1,43.06,89.75l.71.72h-9.1v7.42h30.9V90.47h-9.1l.71-.72A35.85,35.85,0,0,1,84.48,77.3">
+                                                        </path>
+                                                        <path
+                                                            d="M56.23,54.31,50,62.21l-6.23-7.9a5.42,5.42,0,0,1-.24-6.47L50,37.31l6.47,10.53a5.42,5.42,0,0,1-.24,6.47M42.58,28.93,34.67,41.62a13.37,13.37,0,0,0,.72,15.09L50,75.14,64.61,56.71a13,13,0,0,0,.72-15.09L50,17l-.48.72a5.58,5.58,0,0,1-4.31,1.68c-4.07,0-7.18-8.62,4.55-17.24,0,0-28.74,5.5-14.85,30.41Z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Маги</span>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </span>
+                                </button>
+                                <span class="circle-sec-3"></span>
+                            </li>
+                            <li>
+                                <button class="style-button-list">
+                                    <span class="style-button-icon">
+                                        <div class="icon-sec-3">
+                                            <div>
+                                                <span class="icon-svg">
+                                                    <svg viewBox="0 0 100 100">
+                                                        <path d="M28.69,27.25h6.94l1.92-6.94L24.14,12.4Z"></path>
+                                                        <path d="M71.31,27.25,75.86,12.4,62.45,20.31l1.92,6.94Z"></path>
+                                                        <path
+                                                            d="M71.31,35.39c-1.43,0-12.21-3.83-12.21-3.83L50,42.34,40.9,31.56s-10.54,3.83-12.21,3.83c-7.67,0-4.79-7.18-4.79-7.18S4.26,48.32,2.11,64.13c0,0,5.74-8.86,24.42-13.17A26.22,26.22,0,0,0,40.42,63.89c-.72-3.11-1.44-6.71-2.15-10.06a22.36,22.36,0,0,1-3.84-4.31c.72,0,7.19-.72,8.15-.72.71,2.64,4.55,28.74,4.55,28.74l-7,10.3v10L50,93.82l9.82,4.07V87.6l-7-10.3s3.84-26.1,4.55-28.74c.72,0,7.19.72,8.15.72a16.52,16.52,0,0,1-3.84,4.31,98.08,98.08,0,0,0-2.15,10.06A25.33,25.33,0,0,0,73.47,50.72c18.68,4.55,24.42,13.17,24.42,13.17C95.74,48.32,76.1,28,76.1,28s2.88,7.42-4.79,7.42">
+                                                        </path>
+                                                        <path d="M50,2.11,42.34,23.42h.24L50,33.24l7.42-9.82h.24Z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Стрелки</span>
+                                                </span>
+                                            </div>
+                                        </div>
+
+
+                                    </span>
+                                </button>
+                                <span class="circle-sec-3"></span>
+                            </li>
+                            <li>
+                                <button class="style-button-list">
+                                    <span class="style-button-icon">
+                                        <div class="icon-sec-3">
+                                            <div>
+                                                <span class="icon-svg">
+                                                    <svg viewBox="0 0 100 100">
+                                                        <path
+                                                            d="M90.4,2.11C90.4,29.41,65,38.74,65,38.74L60.94,61a8.39,8.39,0,0,0-.48,2.39,6.95,6.95,0,0,0,13.89,0,6.7,6.7,0,0,0-5.75-6.7c6.71-11.5,16.29-6,16.29-6,1.43-1.44,2.63-2.88,3.83-4.07l-7.19-2.88h9.34a38.5,38.5,0,0,0,5.75-11.25L87,28.69h10.3A33,33,0,0,0,90.4,2.11">
+                                                        </path>
+                                                        <path
+                                                            d="M35.32,38.74S9.93,29.41,9.93,2.11c0,0-9.82,10.77-7.42,26.1h10.3L3.23,32A41.09,41.09,0,0,0,7.3,40.9h11L9.69,44.49a39.83,39.83,0,0,0,5.27,6s9.58-5.51,16.29,6a6.7,6.7,0,0,0-5.75,6.7,6.95,6.95,0,1,0,13.41-2.39Z">
+                                                        </path>
+                                                        <path
+                                                            d="M45.14,22.7,47.77,16h4.79l2.63,6.94-5,13.89Zm-1-16-7,16L47.29,48.08V71.79l-5,16,5,10H53l5-10-5-16V48.08L63.1,22.7l-7-16Z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Поддержка</span>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </span>
+                                </button>
+                                <span class="circle-sec-3"></span>
+                            </li>
+                            <li>
+                                <button class="style-button-list">
+                                    <span class="style-button-icon">
+                                        <div class="icon-sec-3">
+                                            <div>
+                                                <span class="icon-svg">
+                                                    <svg viewBox="0 0 100 100">
+                                                        <path 
+                                                            d="M85.92,63.89,55,90V67.48h7.42v-9.1H37.55v9.1H45V90.23L14.08,63.89,8.33,21,35.87,10.49a39.13,39.13,0,0,1,28.26,0L91.67,21ZM66.28,5A47.61,47.61,0,0,0,33.72,5L2.11,17.19l6.7,49.57L41.86,95A13,13,0,0,0,50,97.89,12.5,12.5,0,0,0,58.14,95L91.19,66.76l6.7-49.57Z">
+                                                        </path>
+                                                        <path
+                                                            d="M78.74,32.28,62,21.26v5.27H38V21.26L21.74,28.45a2.9,2.9,0,0,0-1.67,3.11l4.31,19.16a3.22,3.22,0,0,0,2.15,2.15l11.26,2.4V50H61.73v5.27l11.5-2.4a2.52,2.52,0,0,0,2.15-2.15l4.31-15.57a2.39,2.39,0,0,0-1-2.87">
+                                                        </path>
+                                                        <path d="M57.42,20.07H42.58L50,11.68Z"></path>
+                                                    </svg>
+                                                    <span>Танки</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </button>
+                                <span class="circle-sec-3"></span>
+                            </li>
+                        </ul>
+                        <div class="scetion-3-video">
+                            <video
+                                src="https://www.leagueoflegends.com/static/assassin-c026c1f2ea83776334e2adb286bc5781.webm"
+                                width="400px"></video>
+                            <div class="line-border-video"></div>
+                            <div class="line-border-video-2"></div>
+                        </div>
+                    </div>
+                    <div class="sec-3">
+                        <div class="sec-list-2">
+                            <div class="flex-content">
+                                <div class="animation-border">
+                                    <span></span>
+                                </div>
+                                <div class="imgContent">
+                                    <img class="img-animation" src="" alt="" />
+                                    <div class="champion-name">АКАЛИ</div>
+                                    <div class="champion-description">Вольная убийца</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </div>
+    </section>
+
+
+    <!-- card PRODUCT -->
+
+    <section>
+        <div class="main-cards">
+            <div class="card_title">
+                <h2> <strong>ВЫБЕРИТЕ</strong></h2>
+                <h1>ЧЕМПИОНА</h1>
+
+            </div>
+
+        </div>
+        <script src="./project.js"></script>
+    </section>
+
+
+    <!-- 2 ШТУК КАРТ -->
+    <section class="section_2_sht_cards">
+        <!-- <div class="2_sht_cards">
+            <div class="2_sht_cards_img">
+                <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt07cc3a4f8c68a4f4/65c2d813d6cf044d1a152212/020624_LNY24_music-theme_no_text_1920x1080_RK.jpg?quality=90&width=460" alt="">
+            </div>
+            <div class="2_sht_cards_text">
+                <h1>Музыкальная тема события "Лунный пир 2024"</h1>
+            </div>
+        </div> -->
+    </section>
+
+
+
+    <!-- ПЕРЕД ФУТЕР ВИДЕО -->
+    <section class="section_last_video">
+        <div>
+
+
+        </div>
+        <video autoplay muted loop width="100%">
+            <source src="https://www.leagueoflegends.com/static/hero-c35bd03ceaa5f919e98b20c905044a3d.webm">
+            Для поддержки других форматов видео добавьте аналогичные source элементы
             Your browser does not support the video tag.
         </video>
-    </div>
-    <div class="video-content">
-        <div class="border-line"></div>
-        <video autoplay muted loop id="top-video">
-            <source src="https://www.leagueoflegends.com/static/hero-c35bd03ceaa5f919e98b20c905044a3d.webm"
-                weight="100px" type="video/mp4">
-        </video>
-        <div>
-            <img src="https://www.leagueoflegends.com/static/logo-1200-04b3cefafba917c9c571f9244fd28a1e.png"
-                height="250px" alt="">
-            <button>
-                <div class="btn_botder"></div>
-                Игrать бесплатно
-            </button>
-
+        <div class="btn_v_s">
+            <button>PLAY</button>
         </div>
 
-    </div>
-</div>
 
 
-
-<!-- Карточки -->
-<section class="section-cards">
-    <!-- <div id="cardContainer">
-        <div class="cardContainer_img">
-    <a href="./list2.html"></a> 
-            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt8119faecaa62d9be/65cab252670d7e5357280f8b/2020_key_art_Banner.jpg?quality=90&crop=1%3A1&width=480" alt="" height="100%" width="100%">
-        </div>
-        <div class="cardContainer_text">
-            <h4>Новости об игре</h4>
-            <h3>Изменения обновления 14.3</h3>
-            <p>Встречайте обновление 14.3 и Лунный пир 2024!</p>
-        </div>
-    </div> -->
-    <a href="./list2.html">LOOK</a>
-</section>
+    </section>
 
 
-
-<!-- <section>
-    <div class="section3_list">
-        <div class="section3_text">
-            <p>ВЫБЕРИТЕ</p>
-            <h1>ЧЕМПИОНА</h1>
-            <span>Хотите бросаться в самую гущу боя или помогать союзникам? А может, делать<br> всего понемногу? В
-                Ущелье вы всегда найдете, чем заняться.</span>
-            <div class="btn-active">
-                <button>Показать больше чемпионов</button>
-                <button>Начать игру</button>
+    <!-- FOOTER -->
+    <section class="section_footer">
+        <!-- 1 -->
+        <div class="list1_footer">
+            <div>
+                <p>ВОЗЬМИТЕ ЛИГУ С СОБОЙ</p>
+            </div>
+            <div>
+                <p>Загрузите приложение Лиги и оставайтесь на связи с друзьями, а также следите за последними <br>
+                    новостями
+                    об игре
+                    и киберспортивных событиях.</p>
+            </div>
+            <div>
+                <img src="https://static.tildacdn.com/tild6234-6538-4239-b336-383461343638/App_Sore_v2rus.png"
+                    width="110px" alt="">
+                <img src="https://avatars.mds.yandex.net/i?id=64732062b7a17219332feaec3d99727e_sr-5163192-images-thumbs&n=13"
+                    width="110px" alt="">
             </div>
         </div>
-        <div class="section-3-nav">
-            <div class="main-card-1">
-                <ul class="navigation-section-3">
-                    <li>
-                        <div class="element-sec-3"><img src="./img/png.lg.webp" width="50px" alt=""></div>
-                        <span>htyju</span>
-                    </li>
-                    <li>
-                        <div class="element-sec-3"><img src="./img/png.lg.webp" width="50px" alt=""></div>
-                        <span>htyju</span>
-                    </li>
-                    <li>
-                        <div class="element-sec-3"><img src="./img/png.lg.webp" width="50px" alt=""></div>
-                        <span>htyju</span>
-                    </li>
-                    <li>
-                        <div class="element-sec-3"><img src="./img/png.lg.webp" width="50px" alt=""></div>
-                        <span>htyju</span>
-                    </li>
-                    <li>
-                        <div class="element-sec-3"><img src="./img/png.lg.webp" width="50px" alt=""></div>
-                        <span>htyju</span>
-                    </li>
-                    <li>
-                        <div class="element-sec-3"><img src="./img/png.lg.webp" width="50px" alt=""></div>
-                        <span>htyju</span>
-                    </li>
-                </ul>
-                <hr>
-                <div class="section3-video"><img src="./img/png.lg.webp" alt=""></div>
-            </div>
-            <div class="main-card-2">
-                <div><img src="./img/png.lg.webp" width="300px" alt=""></div>
+        <!-- 2 -->
+        <div class="list2_footer">
+            <div class="list2_footer_text">
+                <a href="./game/index.html">Об игре League Of Legends</a>
+                <a href="">Помогите нам стать лучше</a>
+                <a href="">Статус сервера</a>
+                <a href="">Поддержка</a>
+                <a href="">Загрузить приложение Riot Mobile</a>
             </div>
         </div>
-    </div> -->
-<!-- </section> -->
 
-
-
-
-<section>
-    <div class="6_list_card_2">
-        <!-- <div class="6_list_card_2_img">
-            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt07cc3a4f8c68a4f4/65c2d813d6cf044d1a152212/020624_LNY24_music-theme_no_text_1920x1080_RK.jpg?quality=90&width=460"
-                alt="">
+        <!-- 3 -->
+        <div class="list3_footer">
+            <div class="list3_footer_text">
+                <ion-icon name="logo-vk" class="list3_footer-icon"></ion-icon>
+                <ion-icon name="logo-youtube" class="list3_footer-icon"></ion-icon>
+            </div>
+            <div class="list3_footer_textp">
+                <p>™ & © 2024 Riot Games, Inc. Все права защищены. Riot Games, League of Legends и PvP.net являются<br>
+                    торговыми знаками или зарегистрированными торговыми знаками, принадлежащими Riot Games,<br> Inc.</p>
+            </div>
+            <div class="list3_footer_nav">
+                <a href="">Соглашение с конечным пользователем</a>
+                <a href="">Использование конфиденциальных данных</a>
+                <a href="">Условия использования</a>
+                <a href="">Настройки Cookie</a>
+            </div>
+            <div class="list3_footer_img">
+                <img src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blte38b64ee19414df2/5e7e433a0528cb0bcbc91e87/Russia_-_12_.png?&height=100&disable=upscale"
+                    alt="">
+            </div>
         </div>
-        <div class="6_list_card_2_text">
-            <h1>Musik</h1>
-        </div> -->
-    </div>
-
-</section>
-
-
-
-
-<section>
-    <video autoplay muted loop>
-        <source src="https://www.example.com/path/to/your/video.mp4" type="video/mp4">
-        <!-- Для поддержки других форматов видео добавьте аналогичные source элементы -->
-        Your browser does not support the video tag.
-    </video>
-    
-
-    
-</section>
-
-
-
-
-<!-- FOOTER -->
-<section class="section_footer">
-    <!-- 1 -->
-    <div class="list1_footer">
-        <div>
-            <p>ВОЗЬМИТЕ ЛИГУ С СОБОЙ</p>
-        </div>
-        <div>
-            <p>Загрузите приложение Лиги и оставайтесь на связи с друзьями, а также следите за последними <br> новостями
-                об игре
-                и киберспортивных событиях.</p>
-        </div>
-        <div>
-            <img src="https://static.tildacdn.com/tild6234-6538-4239-b336-383461343638/App_Sore_v2rus.png" width="110px"
-                alt="">
-            <img src="https://avatars.mds.yandex.net/i?id=64732062b7a17219332feaec3d99727e_sr-5163192-images-thumbs&n=13"
-                width="110px" alt="">
-        </div>
-    </div>
-    <!-- 2 -->
-    <div class="list2_footer">
-        <div class="list2_footer_text">
-            <a href="">Об игре League Of Legends</a>
-            <a href="">Помогите нам стать лучше</a>
-            <a href="">Статус сервера</a>
-            <a href="">Поддержка</a>
-            <a href="">Загрузить приложение Riot Mobile</a>
-        </div>
-    </div>
-
-    <!-- 3 -->
-    <div class="list3_footer">
-        <div class="list3_footer_text">
-            <ion-icon name="logo-vk" class="list3_footer-icon"></ion-icon>
-            <ion-icon name="logo-youtube" class="list3_footer-icon"></ion-icon>
-        </div>
-        <div class="list3_footer_textp">
-            <p>™ & © 2024 Riot Games, Inc. Все права защищены. Riot Games, League of Legends и PvP.net являются<br>
-                торговыми знаками или зарегистрированными торговыми знаками, принадлежащими Riot Games,<br> Inc.</p>
-        </div>
-        <div class="list3_footer_nav">
-            <a href="">Соглашение с конечным пользователем</a>
-            <a href="">Использование конфиденциальных данных</a>
-            <a href="">Условия использования</a>
-            <a href="">Настройки Cookie</a>
-        </div>
-        <div class="list3_footer_img">
-            <img src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blte38b64ee19414df2/5e7e433a0528cb0bcbc91e87/Russia_-_12_.png?&height=100&disable=upscale"
-                alt="">
-        </div>
-    </div>
 
 
 
 
 
 
-</section>
+    </section>
 
 
 
 
 
 
+    <!-- <body> -->
 
-<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

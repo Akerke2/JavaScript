@@ -1,0 +1,51 @@
+.blur_bg_img {
+    /* width: 100%; */
+    position: relative;
+
+}
+
+.blur_bg1 {
+    filter: blur(5px);
+    /* width: 100%; */
+
+}
+
+/* #blur_bg_blur { */
+    /* filter: blur(5px); */
+    /* width: 100%; */
+/* } */
+
+.blur_bg2 {
+    margin-bottom: -150px;
+    position: absolute;
+    width: 200px;
+}
+
+.content_in_bg {
+    /* position: absolute; */
+    /* transform: translateX(-50%); */
+    display: flex;
+    /* justify-content: left; */
+    flex-direction: column;
+    color: aliceblue;
+    /* gap: 60px; */
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    /* transform: translate(-50%, -50%); */
+
+}
+
+.content_in_bg_img {
+    display: flex;
+    justify-content: right;
+    gap: 60px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+#ob_igre{
+    color: gray;
+}
